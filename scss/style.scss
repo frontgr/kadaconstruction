@@ -4,6 +4,7 @@ $orange: #ef7f2f;
 $green: #2cae39;
 
 @import "./components/header.scss";
+@import "./components/form-wrapper.scss";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 * {
@@ -14,6 +15,7 @@ $green: #2cae39;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  color: $black;
 }
 
 .container {

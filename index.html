@@ -79,7 +79,98 @@
       </div>
     </header>
     <main class="main container">
-      <form action="" class="form main__form"></form>
+      <div class="form-wrapper main__form-wrapper">
+        <div class="assess">
+          <h2 class="assess__heading">
+            Оцените стоимость ремонта <span>прямо сейчас!</span>
+          </h2>
+          <p class="assess__description">
+            Заполните форму ниже и получите примерную стоимость ремонта
+            моментально!Чтобы получить более точную консультацию, расскажите нам
+            про ваши пожелания подробнее и оставьте контактные данные — в
+            ближайшее время мы с вами свяжемся!
+          </p>
+        </div>
+        <form action="#" class="form">
+          <div class="form__left">
+            <div class="form__left-parameters">
+              <div class="form__left-parameters-count">
+                <label class="form__comment">Выберите количество комнат</label>
+                <div class="form__left-parameters-count-radio-container">
+                  <input type="radio" id="option1" name="options" value="1" />
+                  <label for="option1">1</label>
+                  <input type="radio" id="option2" name="options" value="2" />
+                  <label for="option2">2</label>
+                  <input type="radio" id="option3" name="options" value="3" />
+                  <label for="option3">3</label>
+                  <input type="radio" id="option4" name="options" value="4" />
+                  <label for="option4">4</label>
+                  <input type="radio" id="option5" name="options" value="5+" />
+                  <label for="option5">5+</label>
+                </div>
+              </div>
+              <div class="form__left-parameters-type">
+                <label class="form__comment">Выберите тип ремонта</label>
+                <div class="form__left-parameters-type-radio-container">
+                  <div>
+                    <input type="radio" id="option11" name="option" value="1" />
+                    <label for="option11">Черновой</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="option22" name="option" value="2" />
+                    <label for="option22">Косметический</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="option33" name="option" value="3" />
+                    <label for="option33">Капитальный</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__left-parameters-area">
+                <label class="form__comment">Укажите площадь помещения</label>
+              </div>
+            </div>
+            <div class="form__left-results">
+              <h3 class="form__left-result-heading form__comment">
+                Ориентировочная стоимость вашего ремонта от:
+              </h3>
+              <span class="form__left-result-heading">556 000 ₽</span>
+            </div>
+          </div>
+          <div class="form__right">
+            <div class="form__right-inputs">
+              <input type="text" class="form__right-inputs-name" />
+              <input type="number" class="form__right-inputs-phone" />
+              <div class="form__right-inputs-socials"></div>
+              <div class="form__right-inputs-comment">
+                <label
+                  for="textarea"
+                  class="form-right-inputs-heading form__comment"
+                  >Комментарий</label
+                >
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  class="form-right-inputs-textarea"
+                  placeholder="Расскажите о вашем идеальном ремонте…"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-right-send">
+              <input
+                class="form-right-send"
+                type="submit"
+                value="Отправить заявку для консультации"
+              />
+              <span class="form-right-legal"
+                >Отправляя заявку, вы соглашаетесь с <span
+                  >обработкой персональных данных.</span
+                >
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="footer container"></footer>
   </body>
