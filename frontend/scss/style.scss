@@ -1,10 +1,11 @@
 $black: #212738;
-$while: #edf2ef;
+$white: #edf2ef;
 $orange: #ef7f2f;
 $green: #2cae39;
 
 @import "./components/header.scss";
 @import "./components/main.scss";
+@import "./components/form-wrapper.scss";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 * {
@@ -15,10 +16,25 @@ $green: #2cae39;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  color: $black;
+}
+
+body {
+  background-color: $white;
 }
 
 .container {
-  max-width: 1240px;
+  min-width: 1240px;
   width: 100%;
   margin: 0 auto;
+}
+
+// Убираем стрелки во всех inpyt = number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
