@@ -1,5 +1,5 @@
 $black: #212738;
-$while: #edf2ef;
+$white: #edf2ef;
 $orange: #ef7f2f;
 $green: #2cae39;
 
@@ -17,6 +17,10 @@ $green: #2cae39;
   font-weight: 500;
   font-style: normal;
   color: $black;
+}
+
+body {
+  background-color: $white;
 }
 
 .container {

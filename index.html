@@ -140,6 +140,11 @@
                 </div>
               </div>
               <div class="form__left-parameters-type">
+                <img
+                  src="./images/form/Валик 1.png"
+                  alt="Валик строительный"
+                  class="form__left-parameters-type-valik"
+                />
                 <label class="form__comment">Выберите тип ремонта</label>
                 <div class="form__left-parameters-type-radio-container">
                   <div>
@@ -193,6 +198,11 @@
               </div>
             </div>
             <div class="form__left-results">
+              <img
+                src="./images/form/Рулетка.png"
+                alt="Рулетка"
+                class="form__left-results-roulette"
+              />
               <h3 class="form__left-results-heading form__comment">
                 Ориентировочная стоимость вашего ремонта от:
               </h3>
@@ -206,6 +216,11 @@
           </div>
           <div class="form__right">
             <div class="form__right-inputs">
+              <img
+                src="./images/form/flower.png"
+                alt="Цветок в горшке"
+                class="form__right-flower"
+              />
               <input
                 type="text"
                 placeholder="Ваше имя"
@@ -220,31 +235,57 @@
                 required
                 class="form__right-inputs-phone"
               />
-              <div class="form__right-inputs-socials"></div>
-              <div class="form__right-inputs-comment">
-                <label
-                  for="textarea"
-                  class="form-right-inputs-heading form__comment"
+              <div class="form__right-inputs-socials">
+                <div class="checkbox-container">
+                  <label class="checkbox-label" for="whatsapp">
+                    <input
+                      type="checkbox"
+                      id="whatsapp"
+                      class="checkbox-input"
+                    />
+                    <div class="checkbox-button">Напишите в WhatsApp</div>
+                  </label>
+
+                  <label class="checkbox-label" for="telegram">
+                    <input
+                      type="checkbox"
+                      id="telegram"
+                      class="checkbox-input"
+                    />
+                    <div class="checkbox-button">Напишите в Telegram</div>
+                  </label>
+                  <label class="checkbox-label" for="viber">
+                    <input type="checkbox" id="viber" class="checkbox-input" />
+                    <div class="checkbox-button">Напишите в Viber</div>
+                  </label>
+                </div>
+              </div>
+              <div class="form__right-inputs-comment comment">
+                <label for="textarea" class="comment__heading form__comment"
                   >Комментарий</label
                 >
                 <textarea
                   name="textarea"
                   id="textarea"
-                  required
-                  class="form-right-inputs-textarea"
+                  class="comment__textarea"
                   placeholder="Расскажите о вашем идеальном ремонте…"
                 ></textarea>
               </div>
             </div>
-            <div class="form-right-send">
+            <div class="form__right-send">
+              <img
+                src="./images/form/notepad.png"
+                alt="Блокнот"
+                class="form__right-notepad"
+              />
               <input
-                class="form-right-send"
+                class="form__right-send__button"
                 type="submit"
                 value="Отправить заявку для консультации"
               />
-              <span class="form-right-legal"
-                >Отправляя заявку, вы соглашаетесь с <span
-                  >обработкой персональных данных.</span
+              <span class="form__right-send__legal"
+                >Отправляя заявку, вы соглашаетесь с <a href="#"
+                  >обработкой персональных данных.</a
                 >
               </span>
             </div>
@@ -254,6 +295,7 @@
     </main>
     <footer class="footer container"></footer>
     <script src="./js/jquery.js"></script>
+    <script src="./js/formCheckboxes.js"></script>
     <script type="text/javascript" src="/js/jquery.inputmask.js"></script>
     <script src="./js/formInputMask.js"></script>
   </body>

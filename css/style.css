@@ -176,7 +176,7 @@
   line-height: 40px;
   text-align: center;
   cursor: pointer;
-  border: 2px solid #edf2ef;
+  border: 2px solid #8d8d8d;
   border-radius: 12px;
   transition: border-color 0.15s;
 }
@@ -195,7 +195,13 @@
   border-color: #ef7f2f;
 }
 .form-wrapper .form__left-parameters-type {
+  position: relative;
   margin-top: 40px;
+}
+.form-wrapper .form__left-parameters-type-valik {
+  position: absolute;
+  top: -121px;
+  right: -99px;
 }
 .form-wrapper .form__left-parameters-type-radio-container {
   display: flex;
@@ -218,7 +224,7 @@
   line-height: 40px;
   text-align: center;
   cursor: pointer;
-  border: 2px solid #edf2ef;
+  border: 2px solid #8d8d8d;
   border-radius: 12px;
   transition: border-color 0.15s;
 }
@@ -268,6 +274,7 @@
   box-shadow: 0px 0px 8px 0px rgb(239, 127, 47);
 }
 .form-wrapper .form__left-results {
+  position: relative;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -276,6 +283,11 @@
   height: 178px;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%232cae39' stroke-width='6' stroke-dasharray='24' stroke-dashoffset='59' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 12px;
+}
+.form-wrapper .form__left-results-roulette {
+  position: absolute;
+  top: 0px;
+  left: -173px;
 }
 .form-wrapper .form__left-results-heading {
   width: 500px;
@@ -289,7 +301,9 @@
   font-weight: bold;
 }
 .form-wrapper .form__right {
+  position: relative;
   width: 600px;
+  margin-left: 20px;
 }
 .form-wrapper .form__right-inputs-name, .form-wrapper .form__right-inputs-phone {
   padding-left: 16px;
@@ -308,6 +322,134 @@
 .form-wrapper .form__right-inputs-phone {
   margin-top: 20px;
 }
+.form-wrapper .form__right-inputs-socials .checkbox-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.form-wrapper .form__right-inputs-socials .checkbox-label {
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 188px;
+  padding: 0;
+  cursor: pointer;
+  border: 2px solid #c5c5c5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.form-wrapper .form__right-inputs-socials .checkbox-label:nth-child(1) {
+  width: 188px;
+}
+.form-wrapper .form__right-inputs-socials .checkbox-label:nth-child(2) {
+  width: 179px;
+}
+.form-wrapper .form__right-inputs-socials .checkbox-label:nth-child(3) {
+  width: 148px;
+}
+.form-wrapper .form__right-inputs-socials .checkbox-label:hover {
+  border-color: red;
+}
+.form-wrapper .form__right-inputs-socials .checkbox-input {
+  position: absolute;
+  opacity: 0;
+}
+.form-wrapper .form__right-inputs-socials .checkbox-label:nth-child(1):hover {
+  border-color: #15b55e;
+}
+.form-wrapper .form__right-inputs-socials .checkbox-label:nth-child(2):hover {
+  border-color: #00a6fb;
+}
+.form-wrapper .form__right-inputs-socials .checkbox-label:nth-child(3):hover {
+  border-color: #9747ff;
+}
+.form-wrapper .form__right-inputs-socials .checkbox-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #edf2ef;
+  color: #000;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.form-wrapper .form__right-inputs-socials #telegram:checked + .checkbox-button {
+  background-color: #00a6fb; /* Telegram */
+  color: #fff;
+  border-color: #00a6fb;
+}
+.form-wrapper .form__right-inputs-socials #viber:checked + .checkbox-button {
+  background-color: #9747ff; /* Viber */
+  color: #fff;
+  border-color: #9747ff;
+}
+.form-wrapper .form__right-inputs-socials #whatsapp:checked + .checkbox-button {
+  background-color: #2cae39; /* Viber */
+  color: #fff;
+}
+.form-wrapper .form__right-inputs .comment {
+  display: flex;
+  flex-direction: column;
+}
+.form-wrapper .form__right-inputs .comment__heading {
+  margin-top: 16px;
+}
+.form-wrapper .form__right-inputs .comment__textarea {
+  margin-top: 20px;
+  padding: 12px 16px;
+  width: 600px;
+  height: 232px;
+  border: 2px solid #ef7f2f;
+  font-size: 24px;
+  font-weight: medium;
+  outline: none;
+  border-radius: 12px;
+  resize: none;
+  transition: box-shadow 0.15s;
+}
+.form-wrapper .form__right-inputs .comment__textarea:hover {
+  box-shadow: 0px 0px 8px 0px rgb(239, 127, 47);
+}
+.form-wrapper .form__right-send {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.form-wrapper .form__right-send__button {
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 65px;
+  width: 600px;
+  height: 66px;
+  background-color: #ef7f2f;
+  color: #edf2ef;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.form-wrapper .form__right-send__button:hover {
+  background-color: #ffa05c;
+}
+.form-wrapper .form__right-send__legal {
+  color: #8d8d8d;
+  margin-top: 8px;
+}
+.form-wrapper .form__right-send__legal a {
+  color: #2cae39;
+}
+.form-wrapper .form__right-flower {
+  position: absolute;
+  top: -261px;
+  right: 0;
+}
+.form-wrapper .form__right-notepad {
+  z-index: -1;
+  position: absolute;
+  top: 116px;
+  right: -234px;
+}
 
 * {
   box-sizing: border-box;
@@ -318,6 +460,10 @@
   font-weight: 500;
   font-style: normal;
   color: #212738;
+}
+
+body {
+  background-color: #edf2ef;
 }
 
 .container {
