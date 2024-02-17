@@ -26,11 +26,10 @@ body {
 
 .container {
   min-width: 1240px;
-  width: 100%;
   margin: 0 auto;
 }
 
-// Убираем стрелки во всех inpyt = number
+// Убираем стрелки во всех input = number
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
