@@ -19,13 +19,15 @@ $green: #2cae39;
   font-style: normal;
   color: $black;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: $white;
 }
 
 .container {
-  min-width: 1240px;
+  min-width: 100%;
   margin: 0 auto;
 }
 
