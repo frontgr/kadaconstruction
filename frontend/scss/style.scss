@@ -19,7 +19,9 @@ $green: #2cae39;
   font-style: normal;
   color: $black;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: $white;
 }
