@@ -31,6 +31,9 @@
             text-decoration-line: underline;
             & img{
                 display: block;
+                &:hover{
+                    filter: brightness(1.5);
+                }
             }            
         }
     }

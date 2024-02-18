@@ -316,6 +316,9 @@
 .footer__socials a img {
   display: block;
 }
+.footer__socials a img:hover {
+  filter: brightness(1.5);
+}
 .footer__links {
   display: flex;
   align-items: center;
