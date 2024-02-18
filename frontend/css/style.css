@@ -539,6 +539,7 @@
   margin-top: 40px;
 }
 .form-wrapper .form__left-parameters-type-valik {
+  z-index: -1;
   position: absolute;
   top: -121px;
   right: -99px;

@@ -71,6 +71,7 @@
         position: relative;
         margin-top: 40px;
         &-valik {
+          z-index: -1;
           position: absolute;
           top: -121px;
           right: -99px;
