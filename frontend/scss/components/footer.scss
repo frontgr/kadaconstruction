@@ -19,22 +19,27 @@
             text-align: left;            
         }
     }
+    &__image-logo {
+        display: block;
+        width: 144px;
+        height: 48px;
+        background-image: url("../../images/assets/logo/Button=Footer\,\ State=Default.svg");
+        transition: background-image 0.15s ease-out;
+        background-repeat: no-repeat;
+    }
+    &__image-logo:hover {
+        cursor: pointer;
+        background-image: url("../../images/assets/logo/Button=Footer\,\ State=Hover.svg");
+    }
     &__socials{
         display: flex;
         align-items: center;
-        gap: 12px;
-        & a{
+        & #inst{
             color: #6580B7;
             font-size: 16px;
             line-height: 132%;
             letter-spacing: 0%;
             text-decoration-line: underline;
-            & img{
-                display: block;
-                &:hover{
-                    filter: brightness(1.5);
-                }
-            }            
         }
     }
     &__links{
@@ -106,4 +111,75 @@
             left: 0;
         }     
     }
+    &__social {
+        margin-right: 12px;
+        text-decoration: none;
+        &:last-child {
+            margin-right: 0;
+        }
+        &-img {
+            width: 28px;
+            height: 28px;
+            &-wa {
+            width: 28px;
+            height: 28px;
+            background-image: url("../../images/social/WhatsApp.svg");
+            transition: background-image 0.15s;
+            transition-timing-function: ease-out;
+            &:hover {
+                background-image: url("../../images/social/Button=WA\,\ State=Hover.svg");
+                }
+            }
+          &-tg {
+            width: 28px;
+            height: 28px;
+            background-image: url("../../images/social/Telegram.svg");
+            transition: background-image 0.15s;
+            transition-timing-function: ease-out;
+            &:hover {
+              background-image: url("../../images/social/Button=TG\,\ State=Hover.svg");
+            }
+          }
+          &-vb {
+            width: 28px;
+            height: 28px;
+            background-image: url("../../images/social/Viber.svg");
+            transition: background-image 0.15s;
+            transition-timing-function: ease-out;
+            &:hover {
+              background-image: url("../../images/social/Button=Viber\,\ State=Hover.svg");
+            }
+          }
+          &-vk {
+            width: 28px;
+            height: 28px;
+            background-image: url("../../images/social/VK.svg");
+            transition: background-image 0.15s;
+            transition-timing-function: ease-out;
+            &:hover {
+              background-image: url("../../images/social/Button=VK\,\ State=Hover.svg");
+            }
+          }
+          &-ok {
+            width: 28px;
+            height: 28px;
+            background-image: url("../../images/social/OK.svg");
+            transition: background-image 0.15s;
+            transition-timing-function: ease-out;
+            &:hover {
+              background-image: url("../../images/social/Button=ok\,\ State=Hover.svg");
+            }
+          }
+          &-yt {
+            width: 28px;
+            height: 28px;
+            background-image: url("../../images/social/YouTube.svg");
+            transition: background-image 0.15s;
+            transition-timing-function: ease-out;
+            &:hover {
+              background-image: url("../../images/social/Button=YT\,\ State=Hover.svg");
+            }
+          }
+        }
+      }
 }
