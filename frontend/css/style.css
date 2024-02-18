@@ -487,6 +487,8 @@
   font-size: 24px;
 }
 .form-wrapper .form {
+  position: relative;
+  z-index: 1;
   display: flex;
   margin-top: 48px;
 }
