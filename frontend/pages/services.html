@@ -88,7 +88,7 @@
             />
           </div>
           <div class="costs__btns">
-            <button class="costs__btns-btn">Черновой</button
+            <button class="costs__btns-btn active">Черновой</button
             ><button class="costs__btns-btn">Косметический</button
             ><button class="costs__btns-btn">Капитальный</button>
           </div>
@@ -101,7 +101,65 @@
               <div class="table__head-el">Итого</div>
               <div class="table__head-el">Сроки (в днях)</div>
             </div>
-            <div class="table__body">
+            <div class="table__body active" id="rough">
+              <div class="table__row">
+                <div class="table__row-el">Квартиры-студии</div>
+                <div class="table__row-el">25-35м²</div>
+                <div class="table__row-el">35 000 ₽</div>
+                <div class="table__row-el">65 000 ₽</div>
+                <div class="table__row-el">100 000 ₽</div>
+                <div class="table__row-el">35-50</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">1-комнатные</div>
+                <div class="table__row-el">35-55м²</div>
+                <div class="table__row-el">45 000 ₽</div>
+                <div class="table__row-el">80 000 ₽</div>
+                <div class="table__row-el">125 000 ₽</div>
+                <div class="table__row-el">40-55</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">2х-комнатные</div>
+                <div class="table__row-el">55-75м²</div>
+                <div class="table__row-el">50 000 ₽</div>
+                <div class="table__row-el">90 000 ₽</div>
+                <div class="table__row-el">140 000 ₽</div>
+                <div class="table__row-el">45-60</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">3х-комнатные</div>
+                <div class="table__row-el">75-85м²</div>
+                <div class="table__row-el">60 000 ₽</div>
+                <div class="table__row-el">100 000 ₽</div>
+                <div class="table__row-el">160 000 ₽</div>
+                <div class="table__row-el">60-75</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">4х-комнатные</div>
+                <div class="table__row-el">90-110м²</div>
+                <div class="table__row-el">68 000 ₽</div>
+                <div class="table__row-el">125 000 ₽</div>
+                <div class="table__row-el">193 000 ₽</div>
+                <div class="table__row-el">75-90</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">5х-комнатные</div>
+                <div class="table__row-el">100-140м²</div>
+                <div class="table__row-el">72 000 ₽</div>
+                <div class="table__row-el">136 000 ₽</div>
+                <div class="table__row-el">208 000 ₽</div>
+                <div class="table__row-el">85-110</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">Дома и коттеджи</div>
+                <div class="table__row-el">100-120м²</div>
+                <div class="table__row-el">80 000 ₽</div>
+                <div class="table__row-el">150 000 ₽</div>
+                <div class="table__row-el">230 000 ₽</div>
+                <div class="table__row-el">100-150</div>
+              </div>
+            </div>
+            <div class="table__body" id="cosmetic">
               <div class="table__row">
                 <div class="table__row-el">Квартиры-студии</div>
                 <div class="table__row-el">25-35м²</div>
@@ -157,6 +215,64 @@
                 <div class="table__row-el">120 000 ₽</div>
                 <div class="table__row-el">182 000 ₽</div>
                 <div class="table__row-el">90-120</div>
+              </div>
+            </div>
+            <div class="table__body" id="capital">
+              <div class="table__row">
+                <div class="table__row-el">Квартиры-студии</div>
+                <div class="table__row-el">25-35м²</div>
+                <div class="table__row-el">50 000 ₽</div>
+                <div class="table__row-el">90 000 ₽</div>
+                <div class="table__row-el">140 000 ₽</div>
+                <div class="table__row-el">50-60</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">1-комнатные</div>
+                <div class="table__row-el">35-55м²</div>
+                <div class="table__row-el">60 000 ₽</div>
+                <div class="table__row-el">110 000 ₽</div>
+                <div class="table__row-el">170 000 ₽</div>
+                <div class="table__row-el">55-70</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">2х-комнатные</div>
+                <div class="table__row-el">55-75м²</div>
+                <div class="table__row-el">70 000 ₽</div>
+                <div class="table__row-el">125000 ₽</div>
+                <div class="table__row-el">195 000 ₽</div>
+                <div class="table__row-el">65-80</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">3х-комнатные</div>
+                <div class="table__row-el">75-85м²</div>
+                <div class="table__row-el">85 000 ₽</div>
+                <div class="table__row-el">145 000 ₽</div>
+                <div class="table__row-el">230 000 ₽</div>
+                <div class="table__row-el">70-85</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">4х-комнатные</div>
+                <div class="table__row-el">90-110м²</div>
+                <div class="table__row-el">97 000 ₽</div>
+                <div class="table__row-el">169 000 ₽</div>
+                <div class="table__row-el">266 000 ₽</div>
+                <div class="table__row-el">85-100</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">5х-комнатные</div>
+                <div class="table__row-el">100-140м²</div>
+                <div class="table__row-el">115 000 ₽</div>
+                <div class="table__row-el">187 000 ₽</div>
+                <div class="table__row-el">302 000 ₽</div>
+                <div class="table__row-el">95-110</div>
+              </div>
+              <div class="table__row">
+                <div class="table__row-el">Дома и коттеджи</div>
+                <div class="table__row-el">100-120м²</div>
+                <div class="table__row-el">125 000 ₽</div>
+                <div class="table__row-el">200 000 ₽</div>
+                <div class="table__row-el">325 000 ₽</div>
+                <div class="table__row-el">100-150</div>
               </div>
             </div>
           </div>
@@ -386,7 +502,10 @@
       <div class="footer__box">
         <div class="footer__logos">
           <div class="footer__logos-kada">
-            <img src="../images/assets/logo/Button=Главная, State=Hover.svg" alt="">
+            <img
+              src="../images/assets/logo/Button=Главная, State=Hover.svg"
+              alt=""
+            />
           </div>
           <p class="footer__logos-guarantee">
             Ремонт квартир и домов под ключ с гарантией 3 года.
@@ -415,8 +534,14 @@
           </div>
         </div>
         <div class="footer__contacts">
-          <a class="footer__contacts-text" href="mailto:kada.construction@mail.ru">kada.construction@mail.ru</a>
-          <a class="footer__contacts-text" href="tel: +79250720546">+7 925 072-05-46</a>
+          <a
+            class="footer__contacts-text"
+            href="mailto:kada.construction@mail.ru"
+            >kada.construction@mail.ru</a
+          >
+          <a class="footer__contacts-text" href="tel: +79250720546"
+            >+7 925 072-05-46</a
+          >
           <div class="footer__socials">
             <a href="#"
               ><img src="../images/social/WhatsApp.svg" alt="WhatsApp"

@@ -11,3 +11,24 @@ table_element.forEach((el, index) => {
         });
     })
 })
+
+
+let table_btn = document.querySelectorAll('.costs__btns-btn');
+table_btn.forEach((el, index)=>{
+    el.addEventListener('click', ()=>{
+        table_btn.forEach(el=>{
+            el.classList.remove('active')
+        })
+        el.classList.add('active')
+        changeTable(index)
+    })
+})
+
+let table_body = document.querySelectorAll('.table__body');
+
+function changeTable(index){
+    table_body.forEach(el=>{
+        el.classList.remove('active')
+    })
+    table_body[index].classList.add('active')
+}

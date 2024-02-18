@@ -63,6 +63,11 @@
       color: #212738;
       cursor: pointer;
       transition: border 0.3s;
+      &.active{
+        background: rgb(239, 127, 47);
+        color: rgb(237, 242, 239);
+        border: 2px solid rgb(239, 127, 47);
+      }
       &:hover {
         border: 2px solid rgb(239, 127, 47);
       }
@@ -108,9 +113,12 @@
     }
   }
   &__body {
-    display: flex;
     flex-direction: column;
     gap: 12px;
+    display: none;
+    &.active{
+      display: flex;
+    }
   }
   &__row {
     display: flex;

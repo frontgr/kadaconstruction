@@ -193,6 +193,11 @@
   cursor: pointer;
   transition: border 0.3s;
 }
+.costs__btns-btn.active {
+  background: rgb(239, 127, 47);
+  color: rgb(237, 242, 239);
+  border: 2px solid rgb(239, 127, 47);
+}
 .costs__btns-btn:hover {
   border: 2px solid rgb(239, 127, 47);
 }
@@ -237,9 +242,12 @@
   width: 250px;
 }
 .table__body {
-  display: flex;
   flex-direction: column;
   gap: 12px;
+  display: none;
+}
+.table__body.active {
+  display: flex;
 }
 .table__row {
   display: flex;
