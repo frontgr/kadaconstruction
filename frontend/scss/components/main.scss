@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 .costs {
   display: flex;
@@ -47,6 +48,7 @@
     }
   }
   &__btns {
+    z-index: 5;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -59,6 +61,7 @@
       font-size: 24px;
       line-height: 132%;
       color: #212738;
+      cursor: pointer;
       transition: border 0.3s;
       &:hover {
         border: 2px solid rgb(239, 127, 47);

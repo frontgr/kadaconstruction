@@ -129,6 +129,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 
 .costs {
@@ -175,6 +176,7 @@
   color: #1b1b1e;
 }
 .costs__btns {
+  z-index: 5;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -188,6 +190,7 @@
   font-size: 24px;
   line-height: 132%;
   color: #212738;
+  cursor: pointer;
   transition: border 0.3s;
 }
 .costs__btns-btn:hover {
@@ -266,6 +269,112 @@
 .table__row-el:first-child {
   width: 250px;
   justify-content: flex-start;
+}
+
+.footer {
+  background: rgb(33, 39, 56);
+  padding: 52px 70px;
+}
+.footer__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 225px;
+}
+.footer__logos-guarantee {
+  color: rgb(101, 128, 183);
+  font-size: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer__socials a {
+  color: rgb(101, 128, 183);
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: 0%;
+  text-decoration-line: underline;
+}
+.footer__socials a img {
+  display: block;
+}
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+}
+.footer__links-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__links-item a {
+  color: rgb(237, 242, 239);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  transition: color 0.3s;
+}
+.footer__links-item a:hover {
+  color: rgb(44, 174, 57);
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+}
+.footer__contacts-text {
+  color: rgb(237, 242, 239);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  transition: 0.3s;
+}
+.footer__contacts-text:hover {
+  color: rgb(44, 174, 57);
+}
+.footer__rights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.footer__rights-text {
+  color: rgb(101, 128, 183);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 132%;
+  letter-spacing: 0%;
+}
+.footer__rights-inst {
+  width: 252px;
+  color: rgb(81, 105, 154);
+  font-size: 12px;
+  line-height: 132%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer__rights-year {
+  font-size: 24px;
+}
+.footer__rights-inst {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .form-wrapper {
@@ -618,4 +727,8 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
