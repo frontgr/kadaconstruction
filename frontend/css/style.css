@@ -125,10 +125,11 @@
 }
 
 .main {
-  background: rgba(237, 242, 239, 0);
+  background: #edf2ef;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 
 .costs {
@@ -175,6 +176,7 @@
   color: #1b1b1e;
 }
 .costs__btns {
+  z-index: 5;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -188,10 +190,16 @@
   font-size: 24px;
   line-height: 132%;
   color: #212738;
+  cursor: pointer;
   transition: border 0.3s;
 }
+.costs__btns-btn.active {
+  background: #ef7f2f;
+  color: #edf2ef;
+  border: 2px solid #ef7f2f;
+}
 .costs__btns-btn:hover {
-  border: 2px solid rgb(239, 127, 47);
+  border: 2px solid #ef7f2f;
 }
 .costs__table {
   z-index: 5;
@@ -203,16 +211,17 @@
   gap: 20px;
 }
 .table__head {
-  background: rgb(237, 242, 239);
-  border: 1px solid rgb(44, 174, 57);
+  background: #edf2ef;
+  border: 1px solid #2cae39;
   border-radius: 16px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  overflow: hidden;
 }
 .table__head-el {
   width: 198px;
-  color: rgb(44, 174, 57);
+  color: #2cae39;
   font-size: 24px;
   font-weight: 600;
   line-height: 132%;
@@ -234,9 +243,12 @@
   width: 250px;
 }
 .table__body {
-  display: flex;
   flex-direction: column;
   gap: 12px;
+  display: none;
+}
+.table__body.active {
+  display: flex;
 }
 .table__row {
   display: flex;
@@ -244,7 +256,6 @@
   justify-content: space-between;
 }
 .table__row:hover {
-  background: rgb(237, 242, 239);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
   border-radius: 16px;
 }
@@ -254,18 +265,203 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(33, 39, 56);
+  color: #212738;
   font-size: 24px;
   line-height: 132%;
   letter-spacing: 0%;
   transition: color 0.3s;
 }
 .table__row-el:hover {
-  color: rgb(44, 174, 57);
+  color: #2cae39;
 }
 .table__row-el:first-child {
   width: 250px;
   justify-content: flex-start;
+}
+
+.footer {
+  background: #212738;
+  padding: 52px 70px;
+}
+.footer__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 225px;
+}
+.footer__logos-guarantee {
+  color: #6580B7;
+  font-size: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer__image-logo {
+  display: block;
+  width: 144px;
+  height: 48px;
+  background-image: url("../../images/assets/logo/Button=Footer, State=Default.svg");
+  transition: background-image 0.15s ease-out;
+  background-repeat: no-repeat;
+}
+.footer__image-logo:hover {
+  cursor: pointer;
+  background-image: url("../../images/assets/logo/Button=Footer, State=Hover.svg");
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+}
+.footer__socials #inst {
+  color: #6580B7;
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: 0%;
+  text-decoration-line: underline;
+}
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+}
+.footer__links-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__links-item a {
+  color: #edf2ef;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  transition: color 0.3s;
+}
+.footer__links-item a:hover {
+  color: #2cae39;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+}
+.footer__contacts-text {
+  color: #edf2ef;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  transition: 0.3s;
+}
+.footer__contacts-text:hover {
+  color: #2cae39;
+}
+.footer__rights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.footer__rights-text {
+  color: #6580B7;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 132%;
+  letter-spacing: 0%;
+}
+.footer__rights-inst {
+  width: 252px;
+  color: #51699A;
+  font-size: 12px;
+  line-height: 132%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer__rights-year {
+  font-size: 24px;
+}
+.footer__rights-inst {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer__social {
+  margin-right: 12px;
+  text-decoration: none;
+}
+.footer__social:last-child {
+  margin-right: 0;
+}
+.footer__social-img {
+  width: 28px;
+  height: 28px;
+}
+.footer__social-img-wa {
+  width: 28px;
+  height: 28px;
+  background-image: url("../../images/social/WhatsApp.svg");
+  transition: background-image 0.15s;
+  transition-timing-function: ease-out;
+}
+.footer__social-img-wa:hover {
+  background-image: url("../../images/social/Button=WA, State=Hover.svg");
+}
+.footer__social-img-tg {
+  width: 28px;
+  height: 28px;
+  background-image: url("../../images/social/Telegram.svg");
+  transition: background-image 0.15s;
+  transition-timing-function: ease-out;
+}
+.footer__social-img-tg:hover {
+  background-image: url("../../images/social/Button=TG, State=Hover.svg");
+}
+.footer__social-img-vb {
+  width: 28px;
+  height: 28px;
+  background-image: url("../../images/social/Viber.svg");
+  transition: background-image 0.15s;
+  transition-timing-function: ease-out;
+}
+.footer__social-img-vb:hover {
+  background-image: url("../../images/social/Button=Viber, State=Hover.svg");
+}
+.footer__social-img-vk {
+  width: 28px;
+  height: 28px;
+  background-image: url("../../images/social/VK.svg");
+  transition: background-image 0.15s;
+  transition-timing-function: ease-out;
+}
+.footer__social-img-vk:hover {
+  background-image: url("../../images/social/Button=VK, State=Hover.svg");
+}
+.footer__social-img-ok {
+  width: 28px;
+  height: 28px;
+  background-image: url("../../images/social/OK.svg");
+  transition: background-image 0.15s;
+  transition-timing-function: ease-out;
+}
+.footer__social-img-ok:hover {
+  background-image: url("../../images/social/Button=ok, State=Hover.svg");
+}
+.footer__social-img-yt {
+  width: 28px;
+  height: 28px;
+  background-image: url("../../images/social/YouTube.svg");
+  transition: background-image 0.15s;
+  transition-timing-function: ease-out;
+}
+.footer__social-img-yt:hover {
+  background-image: url("../../images/social/Button=YT, State=Hover.svg");
 }
 
 .form-wrapper {
@@ -709,4 +905,8 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

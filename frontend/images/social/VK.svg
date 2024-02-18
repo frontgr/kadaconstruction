@@ -1,0 +1,13 @@
+<svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip8_1088">
+			<rect id="SM Icons" width="28.000000" height="28.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip8_1088)">
+		<path id="Vector" d="M15.0723 21.4854C6.87109 21.4854 2.19531 15.8643 2 6.50977L6.10742 6.50977C6.24219 13.375 9.26953 16.2832 11.668 16.8828L11.668 6.50977L15.5371 6.50977L15.5371 12.4307C17.9043 12.1758 20.3926 9.47754 21.2324 6.50977L25.0996 6.50977C24.4551 10.168 21.7578 12.8662 19.8379 13.9746C21.7578 14.874 24.8301 17.2275 26 21.4854L21.7422 21.4854C20.8281 18.6367 18.5488 16.4336 15.5371 16.1338L15.5371 21.4854L15.0723 21.4854Z" fill="#0077FF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
