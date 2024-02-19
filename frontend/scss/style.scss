@@ -39,7 +39,8 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input {
+input,
+textarea {
   background-color: $white;
 }
 input[type="number"] {

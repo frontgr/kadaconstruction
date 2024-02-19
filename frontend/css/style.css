@@ -1015,7 +1015,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input {
+input,
+textarea {
   background-color: #edf2ef;
 }
 
