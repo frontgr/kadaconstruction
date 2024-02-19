@@ -876,6 +876,115 @@
   background-color: #ffa05c;
 }
 
+.whyus {
+  margin-top: 85px;
+  background-image: url("../../images/benefits/bg.png");
+  height: 893px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-position: center;
+  background-position-y: 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.whyus__top, .whyus__bottom {
+  z-index: 0;
+  height: 151px;
+  position: absolute;
+  width: 100%;
+}
+.whyus__top {
+  top: 0;
+  background: linear-gradient(180deg, rgb(237, 242, 239) 0%, rgb(237, 242, 239) 0%, rgba(237, 242, 239, 0) 100%);
+}
+.whyus__bottom {
+  bottom: 0;
+  background: linear-gradient(0deg, rgb(237, 242, 239) 0%, rgb(237, 242, 239) 0%, rgba(237, 242, 239, 0) 100%);
+}
+.whyus__heading, .whyus__benefits {
+  z-index: 1;
+}
+.whyus__heading {
+  margin-top: 16px;
+}
+.whyus__heading h2, .whyus__heading span {
+  font-family: "Manrope", sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+}
+.whyus__heading span {
+  display: inline-block;
+  padding: 0 6px;
+  color: #edf2ef;
+  background-color: #2cae39;
+}
+.whyus__benefits {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 1240px;
+}
+.whyus__benefits-item {
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 20px 20px;
+  border-radius: 20px;
+  background-color: #edf2ef;
+  width: 610px;
+  height: 232px;
+}
+.whyus__benefits-item:nth-child(3) {
+  width: 100%;
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.whyus__benefits-item:nth-child(3) h3 {
+  text-align: center;
+  width: 992px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.whyus__benefits-item:nth-child(3) span {
+  font-weight: 600;
+  font-size: 30px;
+}
+.whyus__benefits-item:nth-child(3) span:first-child {
+  background-color: #ef7f2f;
+  color: #edf2ef;
+}
+.whyus__benefits-item:nth-child(3) span:last-child {
+  font-weight: 600;
+  position: relative;
+  font-size: 30px;
+}
+.whyus__benefits-item:nth-child(3) span:last-child img {
+  position: absolute;
+  top: 85%;
+  left: -10px;
+}
+.whyus__benefits-item div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.whyus__benefits-item div h3 {
+  width: 355px;
+  color: #ef7f2f;
+  font-size: 28px;
+  font-weight: bold;
+}
+.whyus__benefits-item div h4 {
+  font-size: 23px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
