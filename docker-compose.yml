@@ -1,10 +1,18 @@
 version: '3'
 
 services:
-  front:
+  front-end:
     image: nginx:latest
     container_name: front-end
     ports:
-        - "8080:80"
+        - "8080:8080"
     volumes:
         - ./frontend:/usr/share/nginx/html
+
+  back-end:
+    build: ./backend
+    container_name: back-end
+    environment:
+      BOT_TOKEN: "6803030007:AAEs81mE72XEyt7-DMV5iQ9bQQTZeDsaKL8"
+    ports:
+        - "8000:8000"
