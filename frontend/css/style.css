@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 .header {
   display: flex;
   justify-content: center;
@@ -1086,6 +1087,101 @@
   font-size: 24px;
   line-height: 132%;
   text-align: center;
+}
+
+.stages {
+  padding-top: 72px;
+}
+.stages__title {
+  color: #212738;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 136%;
+  text-align: center;
+  padding-bottom: 26px;
+}
+.stages__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.stages__box-item {
+  width: 600px;
+  padding: 46px 24px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+  position: relative;
+  z-index: 3;
+}
+.stages__box-title {
+  color: #2cae39;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 130%;
+  padding-bottom: 12px;
+}
+.stages__box-desc {
+  color: #212738;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 132%;
+  text-align: left;
+  z-index: 5;
+}
+.stages__box-num {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 7%;
+  color: #FFD1B0;
+  font-family: "Inter";
+  font-size: 288px;
+  font-weight: 600;
+  line-height: 100%;
+  font-style: italic;
+  z-index: 2;
+}
+
+.learnus {
+  padding: 88px 0;
+}
+.learnus__title {
+  color: #212738;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 136%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.learnus__desc {
+  font-size: 24px;
+  line-height: 132%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.learnus__desc span {
+  color: #ef7f2f;
+}
+.learnus__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.learnus__btn {
+  color: #edf2ef;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  border-radius: 12px;
+  background: #2cae39;
+  border: none;
+  outline: none;
+  padding: 20px 40px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
 }
 
 * {
