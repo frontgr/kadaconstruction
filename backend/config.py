@@ -8,7 +8,7 @@ types = {
     '2': 'Капитальный'
 }
 
-whitelist = [462248675, 462248675]  # id
+whitelist = [462248675, 6699340390, 866512502]  # id: K, I, M
 
 
 def emojis(value: bool):
