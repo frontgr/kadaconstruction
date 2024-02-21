@@ -5,7 +5,8 @@ services:
     image: nginx:latest
     container_name: front-end
     ports:
-        - "8080:8080"
+        - "8080:80"
+
     volumes:
         - ./frontend:/usr/share/nginx/html
 
