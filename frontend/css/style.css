@@ -1084,7 +1084,7 @@
   position: absolute;
   top: 83%;
   left: 0;
-  z-index: 1;
+  z-index: -1;
 }
 .principles__box {
   display: flex;
@@ -1194,21 +1194,24 @@
   margin-bottom: 40px;
 }
 .learnus__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.learnus__btn-btn {
   color: #edf2ef;
   font-size: 22px;
   font-weight: 700;
   line-height: 120%;
   border-radius: 12px;
   background: #2cae39;
-  border: none;
-  outline: none;
   padding: 20px 40px;
   margin: 0 auto;
-  display: block;
   cursor: pointer;
   transition: background 0.3s;
+  display: inline-block;
 }
-.learnus__btn:hover {
+.learnus__btn-btn:hover {
   background: #42CD50;
 }
 

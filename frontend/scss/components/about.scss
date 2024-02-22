@@ -92,7 +92,7 @@
                 position: absolute;
                 top: 83%;
                 left: 0;
-                z-index: 1;
+                z-index: -1;
             }
         }   
     }
@@ -203,21 +203,25 @@
             margin-bottom: 40px;
         }  
     &__btn{
-        color: $white;
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 120%;
-        border-radius: 12px;
-        background: $green;
-        border: none;
-        outline: none;
-        padding: 20px 40px;
-        margin: 0 auto;
-        display: block;
-        cursor: pointer;
-        transition: background 0.3s;
-        &:hover{
-            background: #42CD50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-btn{
+            color: $white;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 120%;
+            border-radius: 12px;
+            background: $green;
+            padding: 20px 40px;
+            margin: 0 auto;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: inline-block;
+            &:hover{
+                background: #42CD50;
+            }
         }
+        
     }
 }
