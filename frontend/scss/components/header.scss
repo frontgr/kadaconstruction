@@ -1,12 +1,18 @@
 .header {
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 99;
+  backdrop-filter: blur(10px);
+  background: rgba(237, 242, 239, 0.2);
+  width: 100%;
   &__wrapper {
     width: 1352px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 96px;
+    
   }
   &__image-logo {
     display: block;

@@ -36,11 +36,12 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
-        padding: 0 10px;
+        
         position: relative;
         z-index: 5;
         &-item{
             color: $black;
+            font-family: 'Montserrat', sans-serif;
             font-size: 24px;
             line-height: 28px;
             padding: 8px 12px;
@@ -55,19 +56,19 @@
         z-index: 1;
         &-drill{
             top: 0;
-            right: -5%;
+            right: -8%;
         }
         &-key{
             top: 23%;
-            left: -4%;
+            left: -9%;
         }
         &-screw-1{
             top: 12%;
-            left: 6%;
+            left: 2%;
         }
         &-screw-2{
-            top: 10%;
-            left: 7%;
+            top: 10.5%;
+            left: 3.5%;
         }
     }
 }
@@ -125,6 +126,11 @@
 
 .stages{
     padding-top: 72px;
+    &__container{
+        max-width: 1270px;
+        width: 100%;
+        margin: 0 auto;
+    }
     &__title{
         color: $black;
         font-size: 44px;
@@ -138,20 +144,55 @@
         align-items: center;
         justify-content: space-between;
         gap: 40px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 15px;
+        &::-webkit-scrollbar {
+            width: 10px; 
+            height: 8px; 
+        }
+        &::-webkit-scrollbar-track {
+            background: #969494; 
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: #c0c0c0; 
+        }
         &-item{
             width: 600px;
-            padding: 46px 24px;
+            height: 300px;
+            padding: 0 24px;
             border-radius: 20px;
             box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
             position: relative;
             z-index: 3;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+            overflow: hidden;
+            &:last-child{
+                background-color: rgba(80, 217, 93, 1);
+                & .stages__box-title{
+                    color: $white;
+                }
+                & .stages__box-desc{
+                    color: $black;
+                }
+                & .stages__box-num{
+                    color: $green;
+                }
+            }
         }
         &-title{
             color: $green;
             font-size: 28px;
             font-weight: 700;
             line-height: 130%;
-            padding-bottom: 12px;
+            z-index: 5;
+            position: relative;
         }
         &-desc{
             color: $black;
