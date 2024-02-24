@@ -36,11 +36,12 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
-        padding: 0 10px;
+        
         position: relative;
         z-index: 5;
         &-item{
             color: $black;
+            font-family: 'Montserrat', sans-serif;
             font-size: 24px;
             line-height: 28px;
             padding: 8px 12px;
@@ -55,19 +56,19 @@
         z-index: 1;
         &-drill{
             top: 0;
-            right: -5%;
+            right: -8%;
         }
         &-key{
             top: 23%;
-            left: -4%;
+            left: -9%;
         }
         &-screw-1{
             top: 12%;
-            left: 6%;
+            left: 2%;
         }
         &-screw-2{
-            top: 10%;
-            left: 7%;
+            top: 10.5%;
+            left: 3.5%;
         }
     }
 }
