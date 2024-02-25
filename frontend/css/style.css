@@ -1374,6 +1374,59 @@
   transform: rotate(4deg);
 }
 
+.map {
+  display: none;
+  position: relative;
+  background-image: url("../../images/map/map.png");
+  height: 742px;
+  width: 100%;
+}
+.map__pin {
+  position: absolute;
+  left: 60%;
+}
+
+.company-description .container {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.company-description__text {
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 132%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.company-description__heading {
+  margin-bottom: 16px;
+  font-family: Manrope;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.company-description__heading span {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: right;
+  color: #ef7f2f;
+}
+.company-description__photo {
+  width: 601px;
+  height: 368px;
+  background-size: cover;
+  border-radius: 20px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  background-image: url("../../images/company-description/drill.jpeg");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

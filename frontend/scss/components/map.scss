@@ -1,0 +1,11 @@
+.map {
+  display: none;
+  position: relative;
+  background-image: url("../../images/map/map.png");
+  height: 742px;
+  width: 100%;
+  &__pin {
+    position: absolute;
+    left: 60%;
+  }
+}
