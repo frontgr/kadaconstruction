@@ -1,0 +1,30 @@
+.portfolio{
+    padding-top: 68px;
+    &__title{
+        color: $black;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 136%;
+        text-align: center;  
+        margin-bottom: 20px;      
+    }
+    &__desc{
+        font-size: 24px;
+        line-height: 132%;
+        text-align: center; 
+        margin-bottom: 48px;  
+        & span{
+            color: $orange;
+        }     
+    }
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+        & img{
+            object-fit: contain;
+            flex-grow: 1;
+        }
+    }
+}
