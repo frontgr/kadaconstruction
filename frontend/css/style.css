@@ -1382,6 +1382,120 @@
   transform: rotate(4deg);
 }
 
+.map {
+  background-image: url("../../images/map/map.png");
+  height: 742px;
+  width: 100%;
+}
+.map .container {
+  position: relative;
+}
+.map__block {
+  padding: 60px 34px;
+  height: 566px;
+  width: 462px;
+  background-color: #edf2ef;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+  position: absolute;
+  left: 0;
+  top: 88px;
+  border-radius: 20px;
+}
+.map__heading-main {
+  color: #ef7f2f;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.map__social {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.map__social a {
+  display: flex;
+  align-items: inherit;
+}
+.map__daily {
+  font-weight: 500;
+  font-size: 24px;
+}
+.map__daily span {
+  color: #ef7f2f;
+}
+.map__fromto {
+  font-weight: 500;
+  font-size: 24px;
+  display: block;
+}
+.map__networks {
+  font-weight: 500;
+  font-size: 24px;
+}
+.map__social-networks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.map__heading-address {
+  color: #ef7f2f;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.map__address {
+  font-weight: 500;
+  font-size: 24px;
+}
+.map__asterisk {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.company-description .container {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.company-description__text {
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 132%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.company-description__heading {
+  margin-bottom: 16px;
+  font-family: Manrope;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.company-description__heading span {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: right;
+  color: #ef7f2f;
+}
+.company-description__photo {
+  width: 601px;
+  height: 368px;
+  background-size: cover;
+  border-radius: 20px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  background-image: url("../../images/company-description/drill.jpeg");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
