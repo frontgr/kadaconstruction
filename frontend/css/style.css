@@ -1163,6 +1163,10 @@
   background: #c0c0c0;
 }
 .stages__box-item {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
   width: 600px;
   height: 300px;
   padding: 0 24px;
@@ -1211,13 +1215,17 @@
   top: 50%;
   transform: translateY(-50%);
   right: 7%;
-  color: #FFD1B0;
+  color: #ffd1b0;
   font-family: "Inter";
   font-size: 288px;
   font-weight: 600;
   line-height: 100%;
   font-style: italic;
   z-index: 2;
+}
+.stages__box--active {
+  cursor: grabbing;
+  cursor: -webkit-graabbing;
 }
 
 .learnus {
@@ -1276,7 +1284,7 @@
   display: inline-block;
 }
 .learnus__btn-btn:hover {
-  background: #42CD50;
+  background: #42cd50;
 }
 .learnus__hover {
   opacity: 0;
