@@ -1495,6 +1495,56 @@
 .portfolio__btns-btn_cost:hover {
   background-color: rgb(255, 160, 92);
 }
+.portfolio__image {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s;
+}
+.portfolio__image:hover .portfolio__hover {
+  opacity: 1;
+}
+.portfolio__image-img {
+  display: block;
+}
+.portfolio__hover {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  background: rgba(33, 39, 56, 0.7);
+  z-index: 6;
+  border-radius: 20px;
+  color: #edf2ef;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.portfolio__hover::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-top: 2px solid #edf2ef;
+  border-left: 2px solid #edf2ef;
+  border-top-left-radius: 8px;
+  top: 20px;
+  left: 20px;
+}
+.portfolio__hover::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-bottom: 2px solid #edf2ef;
+  border-right: 2px solid #edf2ef;
+  border-bottom-right-radius: 8px;
+  bottom: 20px;
+  right: 20px;
+}
 
 @media screen and (max-width: 800px) {
   .portfolio__column {
