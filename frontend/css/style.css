@@ -1456,6 +1456,153 @@
   font-size: 17px;
 }
 
+.reviews {
+  padding-top: 28px;
+}
+.reviews__containter {
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.reviews__heading {
+  font-size: 44px;
+  font-weight: 700;
+}
+.reviews__wrapper {
+  position: relative;
+}
+.reviews__block-right {
+  position: absolute;
+  height: 100%;
+  width: 80px;
+  right: 0;
+  z-index: 4;
+  background: linear-gradient(270deg, rgb(237, 242, 239) 25%, rgba(237, 242, 239, 0) 100%);
+}
+.reviews__block-left {
+  position: absolute;
+  height: 100%;
+  width: 80px;
+  left: 0;
+  z-index: 4;
+  background: linear-gradient(90deg, rgb(237, 242, 239) 25%, rgba(237, 242, 239, 0) 100%);
+}
+.reviews__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.reviews__box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.reviews__box--active {
+  cursor: grabbing;
+  cursor: -webkit-graabbing;
+}
+.reviews__box-item {
+  margin: 28px 10px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  width: 820px;
+  height: 412px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px 0px rgba(44, 174, 57, 0.45);
+  z-index: 3;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  gap: 16px;
+}
+.reviews__box-item:nth-child(1) .reviews__box-item-photo {
+  background-image: url("../../images/reviews/1.png");
+}
+.reviews__box-item:nth-child(2) .reviews__box-item-photo {
+  background-image: url("../../images/reviews/2.png");
+}
+.reviews__box-item:nth-child(3) .reviews__box-item-photo {
+  background-image: url("../../images/reviews/3.png");
+}
+.reviews__box-item:nth-child(4) .reviews__box-item-photo {
+  background-image: url("../../images/reviews/4.png");
+}
+.reviews__box-item:nth-child(5) .reviews__box-item-photo {
+  background-image: url("../../images/reviews/5.png");
+}
+.reviews__box-item:nth-child(6) .reviews__box-item-photo {
+  background-image: url("../../images/reviews/6.png");
+}
+.reviews__box-item:nth-child(1) .reviews__box-item-header-photo {
+  background-image: url("../../images/reviews/11.png");
+}
+.reviews__box-item:nth-child(2) .reviews__box-item-header-photo {
+  background-image: url("../../images/reviews/22.png");
+}
+.reviews__box-item:nth-child(3) .reviews__box-item-header-photo {
+  background-image: url("../../images/reviews/33.png");
+}
+.reviews__box-item:nth-child(4) .reviews__box-item-header-photo {
+  background-image: url("../../images/reviews/44.png");
+}
+.reviews__box-item:nth-child(5) .reviews__box-item-header-photo {
+  background-image: url("../../images/reviews/55.png");
+}
+.reviews__box-item:nth-child(6) .reviews__box-item-header-photo {
+  background-image: url("../../images/reviews/66.png");
+}
+.reviews__box-item-text {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.reviews__box-item-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.reviews__box-item-header-photo {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+.reviews__box-item-header-block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.reviews__box-item-header-heading {
+  color: #212738;
+  font-size: 28px;
+  font-weight: 700;
+}
+.reviews__box-item-header-date {
+  color: #8d8d8d;
+  font-size: 24px;
+  font-weight: 500;
+}
+.reviews__box-item-review {
+  color: #212738;
+  font-size: 24px;
+  text-align: left;
+}
+.reviews__box-item-photo {
+  width: 296px;
+  flex-shrink: 0;
+  height: 372px;
+  border-radius: 8px;
+}
+
+.company-description {
+  margin-top: 60px;
+}
 .company-description .container {
   display: flex;
   gap: 40px;
@@ -1464,7 +1611,6 @@
   align-items: flex-start;
 }
 .company-description__text {
-  font-family: Manrope;
   font-size: 24px;
   font-weight: 500;
   line-height: 132%;
@@ -1473,13 +1619,13 @@
 }
 .company-description__heading {
   margin-bottom: 16px;
-  font-family: Manrope;
+  font-family: "Manrope";
   font-size: 30px;
   font-weight: 700;
   line-height: 100%;
 }
 .company-description__heading span {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 32px;
   font-weight: 900;
   text-align: right;
