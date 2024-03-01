@@ -1382,6 +1382,135 @@
   transform: rotate(4deg);
 }
 
+
+.allservices {
+  padding-top: 60px;
+}
+.allservices__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 76px;
+}
+.allservices__info-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 136%;
+  letter-spacing: 0%;
+  color: #212738;
+  margin-bottom: 12px;
+}
+.allservices__info-title span {
+  color: #2cae39;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 136%;
+  letter-spacing: 0%;
+}
+.allservices__info-desc {
+  color: #212738;
+  font-size: 24px;
+  line-height: 132%;
+  text-align: left;
+  margin-bottom: 48px;
+  padding-right: 38px;
+}
+.allservices__info-also {
+  color: #ef7f2f;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 136%;
+  margin-bottom: 20px;
+}
+.allservices__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.allservices__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.portfolio {
+  padding: 68px 0;
+}
+.portfolio__title {
+  color: #212738;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 136%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.portfolio__desc {
+  font-size: 24px;
+  line-height: 132%;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.portfolio__desc span {
+  color: #ef7f2f;
+}
+.portfolio__box { /* IE10 */
+  display: flex; /* IE10 */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.portfolio__column { /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 10px;
+}
+.portfolio__column img {
+  margin-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+}
+.portfolio__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+.portfolio__btns-btn {
+  display: block;
+  color: #edf2ef;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 20px 40px;
+  border-radius: 12px;
+  transition: background-color 0.3s;
+  background-color: #2cae39;
+}
+.portfolio__btns-btn:hover {
+  background-color: rgb(66, 205, 80);
+}
+.portfolio__btns-btn_cost {
+  background-color: #ef7f2f;
+}
+.portfolio__btns-btn_cost:hover {
+  background-color: rgb(255, 160, 92);
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio__column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .portfolio__column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+=======
 .map {
   background-image: url("../../images/map/map.png");
   height: 742px;
@@ -1642,7 +1771,6 @@
   flex-grow: 0;
   background-image: url("../../images/company-description/drill.jpeg");
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1687,6 +1815,3 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-a {
-  text-decoration: none;
-}/*# sourceMappingURL=style.css.map */

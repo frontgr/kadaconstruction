@@ -1,0 +1,83 @@
+.portfolio{
+    padding: 68px 0;
+    &__title{
+        color: $black;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 136%;
+        text-align: center;  
+        margin-bottom: 20px;      
+    }
+    &__desc{
+        font-size: 24px;
+        line-height: 132%;
+        text-align: center; 
+        margin-bottom: 28px;  
+        & span{
+            color: $orange;
+        }     
+    }
+    &__box{
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 40px;
+    }
+    &__column {
+        -ms-flex: 33%; 
+        flex: 33%;
+        max-width: 33%;
+        padding: 0 10px;
+        & img {
+            margin-top: 20px;
+            vertical-align: middle;
+            width: 100%;
+        }
+    }  
+    &__btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        &-btn{
+            display: block;
+            color: $white;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 120%;
+            padding: 20px 40px;
+            border-radius: 12px;
+            transition: background-color 0.3s;
+            background-color: $green;
+            &:hover{
+                background-color: rgba(66, 205, 80, 1);
+            }
+            &_cost{
+                background-color: $orange;
+                &:hover{
+                    background-color: rgba(255, 160, 92, 1);;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .portfolio__column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .portfolio__column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
