@@ -1382,7 +1382,6 @@
   transform: rotate(4deg);
 }
 
-
 .allservices {
   padding-top: 60px;
 }
@@ -1454,13 +1453,13 @@
 .portfolio__desc span {
   color: #ef7f2f;
 }
-.portfolio__box { /* IE10 */
-  display: flex; /* IE10 */
+.portfolio__box {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 40px;
 }
-.portfolio__column { /* IE10 */
+.portfolio__column {
   flex: 33%;
   max-width: 33%;
   padding: 0 10px;
@@ -1510,7 +1509,6 @@
     max-width: 100%;
   }
 }
-=======
 .map {
   background-image: url("../../images/map/map.png");
   height: 742px;
@@ -1771,6 +1769,7 @@
   flex-grow: 0;
   background-image: url("../../images/company-description/drill.jpeg");
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1815,3 +1814,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
