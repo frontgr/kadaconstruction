@@ -1,150 +1,151 @@
-.portfolio{
-    padding: 68px 0;
-    &__title{
-        color: $black;
-        font-size: 44px;
-        font-weight: 700;
-        line-height: 136%;
-        text-align: center;  
-        margin-bottom: 20px;      
+.portfolio {
+  padding: 68px 0;
+  &__title {
+    color: $black;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 136%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__desc {
+    font-size: 24px;
+    line-height: 132%;
+    text-align: center;
+    margin-bottom: 28px;
+    & span {
+      color: $orange;
     }
-    &__desc{
-        font-size: 24px;
-        line-height: 132%;
-        text-align: center; 
-        margin-bottom: 28px;  
-        & span{
-            color: $orange;
-        }     
+  }
+  &__box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  &__column {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 10px;
+    & img {
+      margin-top: 20px;
+      vertical-align: middle;
+      width: 100%;
     }
-    &__box{
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 40px;
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    &-btn {
+      display: block;
+      color: $white;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 120%;
+      padding: 20px 40px;
+      border-radius: 12px;
+      transition: background-color 0.3s;
+      background-color: $green;
+      border: none;
+      outline: none;
+      width: 320px;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(66, 205, 80, 1);
+      }
+      &_cost {
+        background-color: $orange;
+        &:hover {
+          background-color: rgba(255, 160, 92, 1);
+        }
+      }
+      &_hide {
+        background-color: $black;
+        &:hover {
+          background-color: rgb(51, 59, 82);
+        }
+      }
     }
-    &__column {
-        -ms-flex: 33%; 
-        flex: 33%;
-        max-width: 33%;
-        padding: 0 10px;
-        & img {
-            margin-top: 20px;
-            vertical-align: middle;
-            width: 100%;
-        }
-    }  
-    &__btns{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 28px;
-        &-btn{
-            display: block;
-            color: $white;
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 120%;
-            padding: 20px 40px;
-            border-radius: 12px;
-            transition: background-color 0.3s;
-            background-color: $green;
-            border: none;
-            outline: none;
-            width: 320px;
-            text-align: center;
-            &:hover{
-                background-color: rgba(66, 205, 80, 1);
-            }
-            &_cost{
-                background-color: $orange;
-                &:hover{
-                    background-color: rgba(255, 160, 92, 1);;
-                }
-            }
-            &_hide{
-                background-color: $black;
-                &:hover{
-                    background-color: rgba(38, 45, 65, 1);
-                }
-            }
-        }
+  }
+  &__image {
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s;
+    &-extra {
+      display: none;
     }
-    &__image {
-        position: relative;
-        z-index: 2;
-        transition: all 0.3s;
-        &-extra{
-            display: none;
-        }
-        &:hover .portfolio__hover {
-            opacity: 1;
-        }
-        &-img {
-            display: block;
-            }
+    &:hover .portfolio__hover {
+      opacity: 1;
     }
-    &__hover {
-        opacity: 0;
-        position: absolute;
-        inset: 0;
-        background: rgba(33, 39, 56, 0.7);
-        z-index: 6;
-        border-radius: 20px;
-        color: $white;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 130%;
-        display: flex;
-        align-items: center;
-        padding: 0 50px;
-        text-align: center;
-        transition: all 0.3s;
-    
-        &::before {
-            content: "";
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            border-top: 2px solid $white;
-            border-left: 2px solid $white;
-            border-top-left-radius: 8px;
-            top: 20px;
-            left: 20px;
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            border-bottom: 2px solid $white;
-            border-right: 2px solid $white;
-            border-bottom-right-radius: 8px;
-            bottom: 20px;
-            right: 20px;
-        }
+    &-img {
+      display: block;
     }
+  }
+  &__hover {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    background: rgba(33, 39, 56, 0.7);
+    z-index: 6;
+    border-radius: 20px;
+    color: $white;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    text-align: center;
+    transition: all 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-top: 2px solid $white;
+      border-left: 2px solid $white;
+      border-top-left-radius: 8px;
+      top: 20px;
+      left: 20px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-bottom: 2px solid $white;
+      border-right: 2px solid $white;
+      border-bottom-right-radius: 8px;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
 }
 
-#portfolio__hide{
-    display: none;
+#portfolio__hide {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
-    .portfolio__column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
+  .portfolio__column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .portfolio__column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .portfolio__column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
+}
