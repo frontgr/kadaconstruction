@@ -793,6 +793,7 @@
   position: absolute;
   top: -261px;
   right: 0;
+  z-index: -1;
 }
 .form-wrapper .form__right-notepad {
   z-index: -1;
@@ -994,6 +995,9 @@
   color: #ef7f2f;
   font-size: 28px;
   font-weight: bold;
+}
+.whyus__benefits-item div h3 img {
+  display: none;
 }
 .whyus__benefits-item div h4 {
   font-size: 23px;
@@ -1354,6 +1358,10 @@
   letter-spacing: 3%;
   margin-bottom: 12px;
 }
+.kinds__item-title::after {
+  content: " ремонт";
+  display: inline;
+}
 .kinds__item-desc {
   color: #212738;
   font-size: 24px;
@@ -1434,7 +1442,7 @@
 }
 
 .portfolio {
-  padding: 68px 0;
+  padding: 81px 0;
 }
 .portfolio__title {
   color: #212738;
@@ -1890,10 +1898,20 @@ a {
 
 @media screen and (max-width: 1673px) {
   .form-wrapper .form__right-notepad {
-    right: -41px;
+    right: -102px;
+    width: 312px;
+    height: 384px;
+    top: 38px;
   }
 }
 @media screen and (max-width: 1440px) {
+  .form__left-parameters-type-radio-container label,
+  .form__right-inputs-socials .checkbox-button,
+  .form__left-parameters-count-radio-container label,
+  .form__right-inputs-name,
+  .form__right-inputs-phone {
+    background-color: #edf2ef;
+  }
   .container {
     max-width: 880px;
   }
@@ -1959,6 +1977,16 @@ a {
   .promo-block__buttons-portfolio, .promo-block__buttons-cost {
     font-size: 20px;
   }
+  .form-wrapper .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-wrapper .container__form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .form-wrapper .assess {
     width: 776px;
   }
@@ -1970,8 +1998,202 @@ a {
   }
   .form-wrapper .assess__description {
     font-size: 22px;
+    width: 720px;
   }
   .form-wrapper .form {
-    margin-top: 92px;
+    justify-content: center;
+    margin-top: 63px;
+  }
+  .form-wrapper .form__left,
+  .form-wrapper .form__right {
+    width: 420px;
+  }
+  .form-wrapper .form__comment {
+    font-size: 24px;
+  }
+  .form-wrapper .form__left-parameters-count-radio-container label {
+    width: 52px;
+    height: 40px;
+    margin-right: 12px;
+    font-size: 22px;
+  }
+  .form-wrapper .form__left-parameters-area-input {
+    width: 420px;
+  }
+  .form-wrapper .form__right-inputs .comment__textarea {
+    height: 160px;
+  }
+  .form-wrapper .form__left-parameters-area-input {
+    right: 0;
+  }
+  .form-wrapper .form__left-parameters-area-container span {
+    font-size: 22px;
+    right: 196px;
+  }
+  .form-wrapper .form__right-send__button {
+    margin-top: 51px;
+  }
+  .form-wrapper .form__left-results-roulette {
+    width: 234px;
+    height: 153px;
+    top: 60px;
+    left: -131px;
+  }
+  .form-wrapper .form__left-parameters-type-valik {
+    top: -14px;
+    right: -163px;
+  }
+  .form-wrapper .form__left-results-price {
+    font-size: 28px;
+  }
+  .form-wrapper .form__right-inputs-name, .form-wrapper .form__right-inputs-phone, .form-wrapper .form__right-send__button, .form-wrapper .form__right-inputs .comment__textarea, .form-wrapper .form__left-results,
+  .form-wrapper .form__left-results-heading,
+  .form-wrapper .form__right-send {
+    width: 420px;
+  }
+  .form-wrapper .form__right-flower {
+    width: 174px;
+    height: 207px;
+    top: -207px;
+  }
+  .form-wrapper .form__right-inputs-name, .form-wrapper .form__right-inputs-phone {
+    font-size: 22px;
+  }
+  .form-wrapper .form__right-inputs-socials .checkbox-label {
+    font-size: 16px;
+  }
+  .form-wrapper .form__right-inputs-socials .checkbox-container {
+    flex-wrap: wrap;
+  }
+  .form-wrapper .form__right-inputs .comment__textarea {
+    font-size: 22px;
+  }
+  .form-wrapper .form__right-send__button {
+    font-size: 20px;
+  }
+  .form-wrapper .form__right-send__legal {
+    text-align: center;
+    font-size: 16px;
+  }
+  .whyus__heading {
+    margin-top: 16px;
+  }
+  .whyus__heading h2, .whyus__heading span {
+    font-size: 36px;
+  }
+  .whyus__top, .whyus__bottom {
+    height: 116px;
+  }
+  .whyus__benefits {
+    margin-top: 28px;
+    width: 880px;
+  }
+  .whyus__benefits-item {
+    gap: 8px;
+    padding: 25px 25px;
+    border-radius: 12px;
+    width: 430px;
+    height: 208px;
+  }
+  .whyus__benefits-item img {
+    width: 60px;
+    height: 60px;
+    display: none;
+  }
+  .whyus__benefits-item:nth-child(3) {
+    height: 127px;
+    padding: 20px 40px;
+  }
+  .whyus__benefits-item:nth-child(3) h3 {
+    font-size: 24px;
+  }
+  .whyus__benefits-item:nth-child(3) span {
+    font-size: 24px;
+  }
+  .whyus__benefits-item:nth-child(3) span:last-child {
+    font-size: 24px;
+  }
+  .whyus__benefits-item:nth-child(3) span:last-child img {
+    width: initial;
+    display: block;
+    height: initial;
+    top: 85%;
+    left: 10px;
+  }
+  .whyus__benefits-item:nth-child(4) {
+    align-items: flex-start;
+  }
+  .whyus__benefits-item div {
+    gap: 8px;
+  }
+  .whyus__benefits-item div h3 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .whyus__benefits-item div h3 img {
+    display: block;
+  }
+  .whyus__benefits-item div h4 {
+    font-size: 22px;
+  }
+  .kinds {
+    padding-top: 20px;
+  }
+  .kinds__title {
+    font-size: 36px;
+  }
+  .kinds__item-title {
+    font-size: 28px;
+  }
+  .kinds__item-title::after {
+    display: none;
+  }
+  .kinds__item-desc {
+    font-size: 22px;
+  }
+  .kinds__image-img {
+    width: 280px;
+    height: 196px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+  .kinds__image-cost {
+    padding: 8px 16px;
+    font-size: 24px;
+    border-radius: 8px;
+  }
+  .appeal__img-drill {
+    width: 229.36px;
+    height: 221.45px;
+    top: 105px;
+    right: -87px;
+  }
+  .appeal__img-key {
+    top: 96px;
+    left: -111px;
+    width: 345.86px;
+    height: 292.58px;
+  }
+  .appeal__img-screw-1 {
+    transform: rotate(351deg);
+    width: 54.46px;
+    height: 65.68px;
+    top: 116px;
+    left: 93px;
+  }
+  .appeal__img-screw-2 {
+    transform: rotate(34deg);
+    width: 48px;
+    height: 80px;
+    top: 116px;
+    left: 85px;
+  }
+  .appeal__box-item {
+    font-size: 21px;
+  }
+  .appeal__title {
+    font-size: 36px;
   }
 }/*# sourceMappingURL=style.css.map */
