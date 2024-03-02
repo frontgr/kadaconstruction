@@ -1485,6 +1485,10 @@
   border-radius: 12px;
   transition: background-color 0.3s;
   background-color: #2cae39;
+  border: none;
+  outline: none;
+  width: 320px;
+  text-align: center;
 }
 .portfolio__btns-btn:hover {
   background-color: rgb(66, 205, 80);
@@ -1495,10 +1499,19 @@
 .portfolio__btns-btn_cost:hover {
   background-color: rgb(255, 160, 92);
 }
+.portfolio__btns-btn_hide {
+  background-color: #212738;
+}
+.portfolio__btns-btn_hide:hover {
+  background-color: rgb(38, 45, 65);
+}
 .portfolio__image {
   position: relative;
   z-index: 2;
   transition: all 0.3s;
+}
+.portfolio__image-extra {
+  display: none;
 }
 .portfolio__image:hover .portfolio__hover {
   opacity: 1;
@@ -1544,6 +1557,10 @@
   border-bottom-right-radius: 8px;
   bottom: 20px;
   right: 20px;
+}
+
+#portfolio__hide {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {

@@ -51,6 +51,10 @@
             border-radius: 12px;
             transition: background-color 0.3s;
             background-color: $green;
+            border: none;
+            outline: none;
+            width: 320px;
+            text-align: center;
             &:hover{
                 background-color: rgba(66, 205, 80, 1);
             }
@@ -60,13 +64,21 @@
                     background-color: rgba(255, 160, 92, 1);;
                 }
             }
+            &_hide{
+                background-color: $black;
+                &:hover{
+                    background-color: rgba(38, 45, 65, 1);
+                }
+            }
         }
     }
     &__image {
         position: relative;
         z-index: 2;
         transition: all 0.3s;
-    
+        &-extra{
+            display: none;
+        }
         &:hover .portfolio__hover {
             opacity: 1;
         }
@@ -116,6 +128,9 @@
     }
 }
 
+#portfolio__hide{
+    display: none;
+}
 
 @media screen and (max-width: 800px) {
     .portfolio__column {
