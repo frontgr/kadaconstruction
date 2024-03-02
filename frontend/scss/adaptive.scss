@@ -1,0 +1,94 @@
+@media screen and (max-width: 1673px) {
+  .form-wrapper .form__right-notepad {
+    right: -41px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 880px;
+  }
+  .header {
+    &__wrapper {
+      width: 986px;
+      height: 84px;
+    }
+    &__contact {
+      align-items: start;
+      &-phone {
+        font-size: 20px;
+      }
+      &-time {
+        width: fit-content;
+      }
+    }
+    &__image-logo {
+      background-size: contain;
+      width: 116px;
+      height: 44px;
+    }
+    &__menu {
+      justify-content: space-evenly;
+      &-link {
+        font-size: 20px;
+      }
+    }
+    &__social {
+      &-img-wa,
+      &-img-tg {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+  .main {
+    padding-top: 84px;
+  }
+  .promo-block {
+    height: 420px;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    &__heading {
+      width: 604px;
+    }
+    &__heading-h1 {
+      font-size: 36px;
+      & span {
+        font-size: 36px;
+        &:nth-child(1) img {
+          width: 167px;
+          height: 7px;
+        }
+      }
+    }
+    &__heading-h2 {
+      font-size: 22px;
+    }
+    &__buttons-portfolio,
+    &__buttons-cost {
+      font-size: 20px;
+    }
+  }
+  .form-wrapper {
+    & .assess {
+      width: 776px;
+    }
+    & .container {
+      max-width: 1300px;
+    }
+    & .assess__heading {
+      font-size: 36px;
+    }
+    & .assess__description {
+      font-size: 22px;
+    }
+    & .form {
+      margin-top: 92px;
+    }
+  }
+}
