@@ -29,6 +29,7 @@ $green: #2cae39;
   font-weight: 500;
   font-style: normal;
   color: $black;
+  -webkit-tap-highlight-color: transparent;
 }
 html {
   scroll-behavior: smooth;
@@ -51,6 +52,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 input,
 textarea {
   background-color: $white;
@@ -62,3 +64,4 @@ input[type="number"] {
 a {
   text-decoration: none;
 }
+@import "./adaptive.scss";

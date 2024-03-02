@@ -1779,6 +1779,7 @@
   font-weight: 500;
   font-style: normal;
   color: #212738;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -1816,4 +1817,92 @@ input[type=number] {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1673px) {
+  .form-wrapper .form__right-notepad {
+    right: -41px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 880px;
+  }
+  .header__wrapper {
+    width: 986px;
+    height: 84px;
+  }
+  .header__contact {
+    align-items: start;
+  }
+  .header__contact-phone {
+    font-size: 20px;
+  }
+  .header__contact-time {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header__image-logo {
+    background-size: contain;
+    width: 116px;
+    height: 44px;
+  }
+  .header__menu {
+    justify-content: space-evenly;
+  }
+  .header__menu-link {
+    font-size: 20px;
+  }
+  .header__social-img-wa, .header__social-img-tg {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: center;
+  }
+  .main {
+    padding-top: 84px;
+  }
+  .promo-block {
+    height: 420px;
+  }
+  .promo-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .promo-block__heading {
+    width: 604px;
+  }
+  .promo-block__heading-h1 {
+    font-size: 36px;
+  }
+  .promo-block__heading-h1 span {
+    font-size: 36px;
+  }
+  .promo-block__heading-h1 span:nth-child(1) img {
+    width: 167px;
+    height: 7px;
+  }
+  .promo-block__heading-h2 {
+    font-size: 22px;
+  }
+  .promo-block__buttons-portfolio, .promo-block__buttons-cost {
+    font-size: 20px;
+  }
+  .form-wrapper .assess {
+    width: 776px;
+  }
+  .form-wrapper .container {
+    max-width: 1300px;
+  }
+  .form-wrapper .assess__heading {
+    font-size: 36px;
+  }
+  .form-wrapper .assess__description {
+    font-size: 22px;
+  }
+  .form-wrapper .form {
+    margin-top: 92px;
+  }
 }/*# sourceMappingURL=style.css.map */
