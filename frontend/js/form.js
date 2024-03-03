@@ -156,7 +156,6 @@ type_repair_inputs.each((index, input)=>{
     })
 });
 area_room_input.on('input', ()=>{
-    console.log(area_room_input[0].value);
     if(area_room_input[0].value<35){
         if(area_room_input[0].value<=0){
           area_room_input[0].value='';
@@ -177,7 +176,6 @@ area_room_input.on('input', ()=>{
 })
 
 function getCosts(){
-    console.log(area_room_input);
     table_data[typeRepair[calculator.type_repair]].forEach((item, index)=>{
 
         let area_range = item.area.split('-');
@@ -209,16 +207,53 @@ let submitBtn = $('.form__right-send__button');
 
 submitBtn.on('click', (e)=>{
   e.preventDefault();
-  let writeTo = form_writeTo.map((index, el)=>el.checked?`${el.labels[0].innerText}`:null);
-  let message = {
-      name: form_name[0].value,
-      phone: form_phone[0].value,
-      writeTo: Array.from(writeTo),
-      comment: form_comment[0].value,
-      countRoom: calculator.counts_room,
-      typeRepair: typeRepair[calculator.type_repair],
-      area_room: calculator.area_room
+  if(form_name[0].value!=='' && form_phone[0].value!=='' && form_comment[0].value!=='' && area_room_input[0].value!==''){
+    let writeTo = form_writeTo.map((index, el)=>el.checked?`${el.labels[0].innerText}`:null);
+    let message = {
+        name: form_name[0].value,
+        phone: form_phone[0].value,
+        writeTo: Array.from(writeTo),
+        comment: form_comment[0].value,
+        countRoom: calculator.counts_room,
+        typeRepair: typeRepair[calculator.type_repair],
+        area_room: calculator.area_room
+    }
+    $('.form-sent')[0].style.display = 'flex';
+    console.log(message);
   }
-  console.log(message);
 });
+
+function cleanForm(){
+  form_name[0].value = '';
+  form_phone[0].value = '';
+  form_comment[0].value = '';
+  area_room_input[0].value = '';
+  form_writeTo[0].checked = false;
+  form_writeTo[1].checked = false;
+  form_writeTo[2].checked = false;
+  type_repair_inputs[0].checked = true;
+  type_repair_inputs[1].checked = false;
+  type_repair_inputs[2].checked = false;
+  counts_room_inputs[0].checked = true;
+  counts_room_inputs[1].checked = false;
+  counts_room_inputs[2].checked = false;
+  counts_room_inputs[3].checked = false;
+  counts_room_inputs[4].checked = false;
+  calculator.counts_room = 1;
+  calculator.type_repair = 1;
+  calculator.area_room = 40;
+
+  getCosts();
+}
+
+
+$('.form-sent__close').on('click', ()=>{
+  $('.form-sent')[0].style.display = 'none';
+  cleanForm();
+});
+$('.form-sent__btn').on('click', ()=>{
+  $('.form-sent')[0].style.display = 'none';
+  cleanForm();
+});
+
 /* form */
