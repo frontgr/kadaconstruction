@@ -85,6 +85,7 @@
     }
   }
   .form-wrapper {
+    margin-top: 28px;
     & .container {
       display: flex;
       flex-direction: column;
@@ -190,6 +191,7 @@
     }
   }
   .whyus {
+    margin-top: 32px;
     &__heading {
       margin-top: 16px;
     }
@@ -287,6 +289,7 @@
     }
   }
   .appeal {
+    padding: 0;
     &__img {
       &-drill {
         width: 229.36px;
@@ -322,6 +325,197 @@
     }
     &__title {
       font-size: 36px;
+    }
+  }
+  .allservices {
+    padding-top: 32px;
+    &__item {
+      &-logo {
+        width: 28px;
+        height: 28px;
+      }
+      &-desc {
+        font-size: 22px;
+      }
+    }
+    &__info {
+      &-desc {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      &-also {
+        font-size: 36px;
+      }
+      &-title {
+        font-size: 36px;
+        margin-bottom: 8px;
+        & span {
+          font-size: 36px;
+        }
+      }
+    }
+
+    &__adaptive-img {
+      display: block;
+      width: 320px;
+      height: 300px;
+    }
+    &__adaptive-box {
+      gap: 17px;
+      display: flex;
+      align-items: center;
+    }
+    &__box {
+      &-img {
+        display: none;
+      }
+    }
+  }
+  .portfolio {
+    padding-top: 44px;
+    &__title {
+      font-size: 36px;
+    }
+    &__desc {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    &__column {
+      flex: 50%;
+      max-width: 50%;
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+  .map {
+    height: 597px;
+    & iframe {
+      height: 597px !important;
+    }
+    &__block {
+      top: 64px;
+      height: 469px;
+      width: 420px;
+      padding: 20px;
+    }
+    &__heading-main {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+    &__social {
+      font-size: 22px;
+    }
+    &__daily {
+      font-size: 22px;
+    }
+    &__fromto {
+      font-size: 22px;
+    }
+    &__networks {
+      font-size: 22px;
+    }
+    &__heading-address {
+      font-size: 36px;
+    }
+    &__address {
+      font-size: 22px;
+    }
+    &__mail {
+      font-size: 22px;
+    }
+    &__asterisk {
+      position: relative;
+      top: -5px;
+    }
+  }
+  .reviews {
+    padding-top: 48px;
+    &__containter {
+      max-width: 880px !important;
+    }
+    &__block {
+      &-right,
+      &-left {
+        width: 48px;
+      }
+    }
+    &__box {
+      &-item {
+        height: 443px;
+        &-review {
+          font-size: 22px;
+        }
+        &-photo {
+          height: 403px;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  .company-description {
+    margin-top: 48px;
+    & .container {
+      gap: 32px;
+      flex-direction: column;
+    }
+    &__text {
+      font-size: 22px;
+    }
+    &__photo {
+      width: 880px;
+      background-position: center;
+    }
+  }
+  .footer {
+    &__box {
+      max-width: 880px;
+    }
+    & a {
+      font-size: 20px;
+    }
+    padding: 52px 70px;
+    &__image-logo {
+      background-size: cover;
+      width: 114px;
+      height: 38px;
+    }
+    &__logos {
+      width: 278px;
+      order: 1;
+    }
+    &__contacts {
+      transform: translateX(78px);
+      order: 2;
+      align-items: center;
+    }
+    &__links {
+      order: 3;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      &-item {
+        align-items: flex-end;
+        gap: 16px;
+        & a {
+          width: 80%;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1085px) {
+  .form-wrapper .form__right-notepad {
+    right: -45px;
+  }
+  .appeal {
+    padding: 0;
+    &__img {
+      &-drill {
+        top: 35px;
+        right: -31px;
+      }
     }
   }
 }

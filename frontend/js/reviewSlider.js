@@ -32,7 +32,9 @@ slider.addEventListener("mousemove", (e) => {
   } else {
     leftBlock.style.display = "block";
   }
-  if (slider.scrollLeft === 3890) {
+  if (slider.scrollLeft === 3890 && window.innerWidth >= 1440) {
+    rightBlock.style.display = "none";
+  } else if (slider.scrollLeft === 4280 && window.innerWidth <= 1440) {
     rightBlock.style.display = "none";
   } else {
     rightBlock.style.display = "block";
