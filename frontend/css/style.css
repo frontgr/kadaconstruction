@@ -955,6 +955,7 @@
 }
 .whyus__benefits-item:nth-child(3) {
   width: 100%;
+  height: 148px;
   flex-grow: 1;
   font-weight: 600;
   font-size: 30px;
@@ -2172,7 +2173,7 @@ a {
   }
   .appeal__img-key {
     top: 96px;
-    left: -111px;
+    left: -95px;
     width: 345.86px;
     height: 292.58px;
   }
