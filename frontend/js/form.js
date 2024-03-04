@@ -219,9 +219,8 @@ submitBtn.on('click', async (e)=>{
         telegram: `${form_writeTo[1].checked}`,
         viber: `${form_writeTo[2].checked}`,
     }
-    $('.form-sent')[0].style.display = 'flex';
     console.log(message);
-
+    $('.form-sent')[0].style.display = 'flex';
     try {
       let response = await fetch('https://kadaconstruction.ru/notification', {
           method: 'POST',
@@ -236,7 +235,9 @@ submitBtn.on('click', async (e)=>{
     } catch (error) {
         console.error('Ошибка:', error);
     }
-  }});
+    
+  }
+});
 
 function cleanForm(){
   form_name[0].value = '';
