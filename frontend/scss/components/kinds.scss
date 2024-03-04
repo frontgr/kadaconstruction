@@ -1,55 +1,59 @@
-.kinds{
-    padding-top: 36px;
-    &__title{
-        text-align: center;
-        color: $green;
-        font-size: 44px;
-        font-weight: 700;
-        line-height: 136%;
-        margin-bottom: 20px;
+.kinds {
+  padding-top: 36px;
+  &__title {
+    text-align: center;
+    color: $green;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 136%;
+    margin-bottom: 20px;
+  }
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__item {
+    padding-bottom: 40px;
+    &-title {
+      color: $orange;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: 3%;
+      margin-bottom: 12px;
+      &::after {
+        content: " ремонт";
+        display: inline;
+      }
     }
-    &__box{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 20px;
+    &-desc {
+      color: $black;
+      font-size: 24px;
+      line-height: 132%;
+      font-weight: 500;
     }
-    &__item{
-        padding-bottom: 40px;
-        &-title{
-            color: $orange;
-            font-size: 30px;
-            font-weight: 700;
-            line-height: 120%;
-            letter-spacing: 3%;
-            margin-bottom: 12px;
-        }
-        &-desc{
-            color: $black;
-            font-size: 24px;
-            line-height: 132%;
-            font-weight: 500;
-        }
+  }
+  &__image {
+    position: relative;
+    &-img {
+      border-radius: 20px;
+      display: block;
+      margin-bottom: 27px;
     }
-    &__image{
-        position: relative;
-        &-img{
-            border-radius: 20px;
-            display: block;
-            margin-bottom: 27px;
-        }
-        &-cost{
-            position: absolute;
-            bottom: -6%;
-            right: 0;
-            padding: 12px 20px;
-            border-radius: 12px;
-            background: $green;
-            color: $white;
-            font-size: 28px;
-            font-weight: 700;
-            z-index: 5;
-            transform: rotate(4.00deg);
-        }
+    &-cost {
+      position: absolute;
+      bottom: -6%;
+      right: 0;
+      padding: 12px 20px;
+      border-radius: 12px;
+      background: $green;
+      color: $white;
+      font-size: 28px;
+      font-weight: 700;
+      z-index: 5;
+      transform: rotate(4deg);
     }
+  }
 }

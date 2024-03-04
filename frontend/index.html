@@ -82,8 +82,71 @@
             ></a>
           </div>
         </div>
+        <img
+          class="header__hamburger"
+          src="./images/menu/hamburger.svg"
+          alt="Кнопка для открытия меню"
+        />
       </div>
     </header>
+    <section class="menu-popup" style="display: none">
+      <div class="menu-popup__close">
+        <img src="./images/menu/close.svg" alt="Закрыть меню" />
+      </div>
+
+      <div class="menu-popup__center">
+        <a href="#">
+          <div class="menu-popup__logo"></div>
+        </a>
+        <ul class="menu-popup__menu">
+          <li class="menu-popup__menu-item">
+            <a href="./pages/services.html" class="menu-popup__menu-link"
+              >Услуги и цены</a
+            >
+          </li>
+          <li class="menu-popup__menu-item">
+            <a href="./pages/portfolio.html" class="menu-popup__menu-link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="menu-popup__menu-item">
+            <a href="./pages/about.html" class="menu-popup__menu-link"
+              >О компании</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="menu-popup__contact-block">
+        <div class="menu-popup__socials">
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=79250720546&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B0%D1%81%D1%86%D0%B5%D0%BD%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%3F%20%D0%92%20%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%20%D0%B4%D0%B5%D0%BB%D0%B0%D1%8E%D1%82%D1%81%D1%8F%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%D1%8B%3F%20%20"
+            class="menu-popup__social"
+          >
+            <div class="menu-popup__social-img-wa"></div>
+          </a>
+          <a
+            href="https://t.me/s21b21"
+            target="_blank"
+            class="menu-popup__social"
+          >
+            <div class="menu-popup__social-img-tg"></div>
+          </a>
+        </div>
+        <div class="menu-popup__contact">
+          <a
+            target="_blank"
+            href="tel:+79250720546"
+            class="menu-popup__contact-phone"
+            >+7 925 072-05-46</a
+          >
+          <span class="menu-popup__contact-time"
+            >Ежедневно с 9:00 до 22:00</span
+          >
+        </div>
+        <a href="#" class="menu-popup__legal">Политика конфиденциальности</a>
+      </div>
+    </section>
     <main class="main">
       <section class="promo-block">
         <div class="promo-block__wrapper">
@@ -113,10 +176,9 @@
           </div>
         </div>
       </section>
-
       <section id="form" class="form-wrapper main__form-wrapper">
         <div class="container">
-          <div>
+          <div class="container__form-container">
             <div class="assess">
               <h2 class="assess__heading">
                 Оцените стоимость ремонта <span>прямо сейчас!</span>
@@ -351,7 +413,12 @@
                 alt="Бесплатная смета и оценка стоимости"
               />
               <div>
-                <h3>Бесплатная смета и оценка стоимости</h3>
+                <h3>
+                  <img
+                    src="./images/benefits/calc.svg"
+                    alt="Соблюдение установленных сроков"
+                  />Бесплатная смета и оценка стоимости
+                </h3>
                 <h4>
                   Всё прозрачно: у вас будет ясное представление о необходимых
                   работах и их стоимости
@@ -364,7 +431,12 @@
                 alt="Соблюдение установленных сроков"
               />
               <div>
-                <h3>Соблюдение установленных сроков</h3>
+                <h3>
+                  <img
+                    src="./images/benefits/clock.svg"
+                    alt="Соблюдение установленных сроков"
+                  />Соблюдение установленных сроков
+                </h3>
                 <h4>
                   Совместно с вами устанавливаем сроки ремонта и соблюдаем
                   их в дальнейшем
@@ -391,7 +463,12 @@
                 alt="Видеоотчеты во время ремонта"
               />
               <div>
-                <h3>Видеоотчеты во время ремонта</h3>
+                <h3>
+                  <img
+                    src="./images/benefits/camera.svg"
+                    alt="Соблюдение установленных сроков"
+                  />Видеоотчеты во время ремонта
+                </h3>
                 <h4>Вы всегда в курсе текущей обстановки на объекте</h4>
               </div>
             </div>
@@ -401,7 +478,12 @@
                 alt="Гарантия ремонта 3 года"
               />
               <div>
-                <h3>Гарантия ремонта 3 года</h3>
+                <h3>
+                  <img
+                    src="./images/benefits/mark.svg"
+                    alt="Соблюдение установленных сроков"
+                  />Гарантия ремонта 3 года
+                </h3>
                 <h4>
                   Мы несём ответственность и готовы помочь в гарантийном случае
                 </h4>
@@ -424,7 +506,7 @@
                 <div class="kinds__image-cost">от 2 000₽/м²</div>
               </div>
 
-              <h4 class="kinds__item-title">Черновой ремонт</h4>
+              <h4 class="kinds__item-title">Черновой</h4>
               <p class="kinds__item-desc">
                 Самая первая стадия обновления помещения. Основная цель
                 чернового ремонта — подготовить помещение для следующего этапа.
@@ -439,7 +521,7 @@
                 />
                 <div class="kinds__image-cost">от 4 000₽/м²</div>
               </div>
-              <h4 class="kinds__item-title">Косметический ремонт</h4>
+              <h4 class="kinds__item-title">Косметический</h4>
               <p class="kinds__item-desc">
                 Процесс обновления интерьера, включающий отделку и нанесение
                 декоративных элементов для придания свежего внешнего вида.
@@ -454,7 +536,7 @@
                 />
                 <div class="kinds__image-cost">от 10 000₽/м²</div>
               </div>
-              <h4 class="kinds__item-title">Капитальный ремонт</h4>
+              <h4 class="kinds__item-title">Капитальный</h4>
               <p class="kinds__item-desc">
                 Полный пересмотр и обновление всех основных элементов помещения
                 с целью улучшения качества, дизайна и функциональности.
@@ -516,49 +598,58 @@
                 который точно знает своё дело. На каждом этапе ремонта любого
                 уровня мы проводим контроль качества.
               </p>
-              <h3 class="allservices__info-also">А также мы:</h3>
-              <ul class="allservices__list">
-                <li class="allservices__item">
-                  <img
-                    src="./images/allservices/allservices__img-1.svg"
-                    alt="Иконка здания"
-                    class="allservices__item-logo"
-                  />
-                  <p class="allservices__item-desc">
-                    Закупаем и привозим все стройматериалы
-                  </p>
-                </li>
-                <li class="allservices__item">
-                  <img
-                    src="./images/allservices/allservices__img-2.svg"
-                    alt="Иконка ключа"
-                    class="allservices__item-logo"
-                  />
-                  <p class="allservices__item-desc">
-                    Принимаем квартиры у застройщика
-                  </p>
-                </li>
-                <li class="allservices__item">
-                  <img
-                    src="./images/allservices/allservices__img-3.svg"
-                    alt="Иконка сообщения"
-                    class="allservices__item-logo"
-                  />
-                  <p class="allservices__item-desc">
-                    Согласовываем перепланировку
-                  </p>
-                </li>
-                <li class="allservices__item">
-                  <img
-                    src="./images/allservices/allservices__img-4.svg"
-                    alt="Иконка вопроса"
-                    class="allservices__item-logo"
-                  />
-                  <p class="allservices__item-desc">
-                    Делаем бесплатные консультации по ремонту
-                  </p>
-                </li>
-              </ul>
+              <div class="allservices__adaptive-box">
+                <div class="allservices__adaptive-also">
+                  <h3 class="allservices__info-also">А также мы:</h3>
+                  <ul class="allservices__list">
+                    <li class="allservices__item">
+                      <img
+                        src="./images/allservices/allservices__img-1.svg"
+                        alt="Иконка здания"
+                        class="allservices__item-logo"
+                      />
+                      <p class="allservices__item-desc">
+                        Закупаем и привозим все стройматериалы
+                      </p>
+                    </li>
+                    <li class="allservices__item">
+                      <img
+                        src="./images/allservices/allservices__img-2.svg"
+                        alt="Иконка ключа"
+                        class="allservices__item-logo"
+                      />
+                      <p class="allservices__item-desc">
+                        Принимаем квартиры у застройщика
+                      </p>
+                    </li>
+                    <li class="allservices__item">
+                      <img
+                        src="./images/allservices/allservices__img-3.svg"
+                        alt="Иконка сообщения"
+                        class="allservices__item-logo"
+                      />
+                      <p class="allservices__item-desc">
+                        Согласовываем перепланировку
+                      </p>
+                    </li>
+                    <li class="allservices__item">
+                      <img
+                        src="./images/allservices/allservices__img-4.svg"
+                        alt="Иконка вопроса"
+                        class="allservices__item-logo"
+                      />
+                      <p class="allservices__item-desc">
+                        Делаем бесплатные консультации по ремонту
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  src="./images/allservices/allservices__box.png"
+                  alt="Процесс ремонта"
+                  class="allservices__adaptive-img"
+                />
+              </div>
             </div>
             <img
               src="./images/allservices/allservices__box.png"
@@ -715,6 +806,9 @@
                 <img src="./images/social/WhatsApp.svg" alt="WhatsApp иконка" />
               </a>
             </div>
+            <a class="map__mail" href="mailto:kada.construction@mail.ru"
+              >kada.construction@mail.ru</a
+            >
             <span class="map__daily"
               >Работаем и отвечаем <span>ежедневно:</span></span
             >
@@ -1019,5 +1113,6 @@
     <script type="text/javascript" src="/js/jquery.inputmask.js"></script>
     <script src="./js/formInputMask.js"></script>
     <script src="./js/reviewSlider.js"></script>
+    <script src="./js/menu-popup.js"></script>
   </body>
 </html>

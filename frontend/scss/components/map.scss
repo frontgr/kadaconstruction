@@ -2,7 +2,6 @@
   & .container {
     position: relative;
   }
-  background-image: url("../../images/map/map.png");
   height: 742px;
   width: 100%;
   &__block {
@@ -54,14 +53,13 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   &__heading-address {
     color: $orange;
     font-size: 44px;
     font-weight: 700;
-    margin-bottom: 10px;
   }
 
   &__address {
@@ -71,5 +69,14 @@
   &__asterisk {
     font-weight: 500;
     font-size: 17px;
+  }
+  &__mail {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 14px;
+    transition: all 0.2s ease;
+    &:hover {
+      color: $orange;
+    }
   }
 }
