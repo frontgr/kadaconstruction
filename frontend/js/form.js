@@ -205,23 +205,38 @@ let form_comment = $('.comment__textarea');
 let submitBtn = $('.form__right-send__button');
 
 
-submitBtn.on('click', (e)=>{
+submitBtn.on('click', async (e)=>{
   e.preventDefault();
   if(form_name[0].value!=='' && form_phone[0].value!=='' && form_comment[0].value!=='' && area_room_input[0].value!==''){
-    let writeTo = form_writeTo.map((index, el)=>el.checked?`${el.labels[0].innerText}`:null);
     let message = {
-        name: form_name[0].value,
-        phone: form_phone[0].value,
-        writeTo: Array.from(writeTo),
-        comment: form_comment[0].value,
-        countRoom: calculator.counts_room,
-        typeRepair: typeRepair[calculator.type_repair],
-        area_room: calculator.area_room
+        name: `${form_name[0].value}`,
+        phone: `${form_phone[0].value}`,   
+        textarea: form_comment[0].value,
+        counts: `${calculator.counts_room}`,
+        types: `${+calculator.type_repair-1}`,
+        area_room: `${calculator.area_room}`,
+        whatsapp: `${form_writeTo[0].checked}`,
+        telegram: `${form_writeTo[1].checked}`,
+        viber: `${form_writeTo[2].checked}`,
     }
     $('.form-sent')[0].style.display = 'flex';
     console.log(message);
-  }
-});
+
+    try {
+      let response = await fetch('https://kadaconstruction.ru/notification', {
+          method: 'POST',
+          body: JSON.stringify(message),
+      });
+      if (response.ok) {
+          let data = await response.json();
+          console.log(data);
+      } else {
+          console.error('Ошибка HTTP: ' + response.status);
+      }
+    } catch (error) {
+        console.error('Ошибка:', error);
+    }
+  }});
 
 function cleanForm(){
   form_name[0].value = '';
