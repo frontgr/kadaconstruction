@@ -85,16 +85,6 @@
 .header__social-img-tg:hover {
   background-image: url("../../images/social/Button=TG, State=Hover.svg");
 }
-.header__social-img-vb {
-  width: 28px;
-  height: 28px;
-  background-image: url("../../images/social/Viber.svg");
-  transition: background-image 0.15s;
-  transition-timing-function: ease-out;
-}
-.header__social-img-vb:hover {
-  background-image: url("../../images/social/Button=Viber, State=Hover.svg");
-}
 .header__socials {
   display: flex;
   align-items: center;
@@ -130,6 +120,13 @@
 }
 .header__contact-block-email-link:hover {
   background-image: url("../../images/social/Mail=Hover.svg");
+}
+.header__hamburger {
+  display: none;
+}
+
+.menu-popup {
+  display: none;
 }
 
 .main {
@@ -2345,7 +2342,19 @@ a {
     background-position: center;
   }
   .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 52px 70px;
+  }
+  .footer__rights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__rights-inst {
+    top: -18px;
+    left: -350px;
   }
   .footer__box {
     max-width: 880px;
@@ -2381,6 +2390,139 @@ a {
     width: 80%;
     text-align: end;
   }
+  .costs__info {
+    width: 620px;
+    gap: 8px;
+  }
+  .costs__info-img_coin {
+    top: -5%;
+    left: -37%;
+    z-index: -1;
+    width: 357px;
+    height: 245px;
+  }
+  .costs__info-img_calc {
+    right: -30%;
+    top: -2px;
+    width: 280px;
+    height: 264px;
+  }
+  .costs__info-title {
+    font-size: 36px;
+  }
+  .costs__info-text {
+    font-size: 22px;
+  }
+  .costs__btns-btn {
+    padding: 4px 12px;
+    font-size: 22px;
+    border-radius: 8px;
+  }
+  .table {
+    max-width: 880px;
+  }
+  .table__head-el {
+    padding: 32px 12px;
+    font-size: 22px;
+    width: 146px;
+  }
+  .table__head-el:first-child {
+    width: 146px;
+  }
+  .table__row-el {
+    font-size: 22px;
+    width: 146px;
+  }
+  .table__row-el:first-child {
+    font-weight: 700;
+    font-size: 18px;
+    width: 146px;
+    text-align: center;
+  }
+  .info {
+    gap: 52px;
+    padding-bottom: 36px;
+  }
+  .info__title img {
+    width: 476px;
+    height: 44px;
+  }
+  .info__wrapper {
+    gap: 12px;
+  }
+  .info__img {
+    width: 352px;
+    height: 236px;
+  }
+  .info__desc {
+    font-size: 22px;
+  }
+  .principles {
+    padding: 52px 0px;
+  }
+  .principles__title {
+    font-size: 36px;
+    margin-bottom: 36px;
+  }
+  .principles__title .line img {
+    height: 15px;
+    width: 331px;
+  }
+  .principles__box-item {
+    width: 430px;
+  }
+  .principles__box-title {
+    font-size: 22px;
+  }
+  .principles__box {
+    row-gap: 64px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .stages {
+    max-width: 880px;
+    padding-top: 60px;
+  }
+  .stages__title {
+    font-size: 36px;
+  }
+  .stages__box {
+    padding-top: 6px;
+  }
+  .stages__box-item {
+    width: 430px;
+    height: 430px;
+    gap: 8px;
+  }
+  .stages__box-title {
+    font-size: 24px;
+  }
+  .stages__box-descr {
+    font-size: 22px;
+  }
+  .learnus {
+    padding: 60px 0;
+  }
+  .learnus__title {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+  .learnus__descr {
+    margin-bottom: 20px;
+  }
+  .learnus__image:last-child {
+    display: none;
+  }
+  .learnus__image-img {
+    width: 430px;
+    height: 430px;
+  }
+  .learnus__box {
+    margin-bottom: 20px;
+  }
+  .learnus__btn-btn {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 1085px) {
   .form-wrapper .form__right-notepad {
@@ -2392,5 +2534,124 @@ a {
   .appeal__img-drill {
     top: 35px;
     right: -31px;
+  }
+}
+@media screen and (max-width: 1009px) {
+  .header__menu, .header__contact .header-link, .header__contact-block, .header__social, .header__socials, .header__contact {
+    display: none;
+  }
+  .header__hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .header__wrapper {
+    width: 720px;
+  }
+  .menu-popup {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edf2ef;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100dvh;
+    width: 364px;
+    filter: blur(0px) !important;
+  }
+  .menu-popup span, .menu-popup a {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .menu-popup a {
+    transition: color 0.2s ease;
+  }
+  .menu-popup a:hover {
+    color: #ef7f2f;
+  }
+  .menu-popup__close img {
+    margin-top: 20px;
+    margin-right: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .menu-popup__close {
+    align-self: flex-end;
+  }
+  .menu-popup__logo {
+    display: block;
+    width: 114px;
+    margin-bottom: 32px;
+    height: 38px;
+    background-size: cover;
+    background-image: url("../../images/assets/logo/Button=Главная, State=Default.svg");
+    transition: background-image 0.15s ease-out;
+    background-repeat: no-repeat;
+  }
+  .menu-popup__logo:hover {
+    cursor: pointer;
+    background-image: url("../../images/assets/logo/Button=Главная, State=Hover.svg");
+  }
+  .menu-popup__social-img-wa {
+    width: 28px;
+    height: 28px;
+    background-image: url("../../images/social/WhatsApp.svg");
+    transition: background-image 0.15s;
+    transition-timing-function: ease-out;
+  }
+  .menu-popup__social-img-wa:hover {
+    background-image: url("../../images/social/Button=WA, State=Hover.svg");
+  }
+  .menu-popup__social-img-tg {
+    width: 28px;
+    height: 28px;
+    background-image: url("../../images/social/Telegram.svg");
+    transition: background-image 0.15s;
+    transition-timing-function: ease-out;
+  }
+  .menu-popup__social-img-tg:hover {
+    background-image: url("../../images/social/Button=TG, State=Hover.svg");
+  }
+  .menu-popup__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-popup__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .menu-popup__contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .menu-popup__contact {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-popup__contact-phone {
+    display: block;
+  }
+  .menu-popup__socials {
+    display: flex;
+    gap: 12px;
+    margin-bottom: -4px;
+  }
+  .menu-popup__contact-block {
+    margin-bottom: 41px;
+  }
+  .header-blured,
+  .main-blured,
+  .footer-blured {
+    filter: blur(4px);
   }
 }/*# sourceMappingURL=style.css.map */

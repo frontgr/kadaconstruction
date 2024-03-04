@@ -62,8 +62,66 @@
             ></a>
           </div>
         </div>
+        <img
+          class="header__hamburger"
+          src="../images/menu/hamburger.svg"
+          alt="Кнопка для открытия меню"
+        />
       </div>
     </header>
+    <section class="menu-popup" style="display: none">
+      <div class="menu-popup__close">
+        <img src="../images/menu/close.svg" alt="Закрыть меню" />
+      </div>
+      <div class="menu-popup__center">
+        <a href="../index.html">
+          <div class="menu-popup__logo"></div>
+        </a>
+        <ul class="menu-popup__menu">
+          <li class="menu-popup__menu-item">
+            <a href="#" class="menu-popup__menu-link">Услуги и цены</a>
+          </li>
+          <li class="menu-popup__menu-item">
+            <a href="./portfolio.html" class="menu-popup__menu-link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="menu-popup__menu-item">
+            <a href="./about.html" class="menu-popup__menu-link">О компании</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-popup__contact-block">
+        <div class="menu-popup__socials">
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=79250720546&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B0%D1%81%D1%86%D0%B5%D0%BD%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%3F%20%D0%92%20%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%20%D0%B4%D0%B5%D0%BB%D0%B0%D1%8E%D1%82%D1%81%D1%8F%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%D1%8B%3F%20%20"
+            class="menu-popup__social"
+          >
+            <div class="menu-popup__social-img-wa"></div>
+          </a>
+          <a
+            href="https://t.me/s21b21"
+            target="_blank"
+            class="menu-popup__social"
+          >
+            <div class="menu-popup__social-img-tg"></div>
+          </a>
+        </div>
+        <div class="menu-popup__contact">
+          <a
+            target="_blank"
+            href="tel:+79250720546"
+            class="menu-popup__contact-phone"
+            >+7 925 072-05-46</a
+          >
+          <span class="menu-popup__contact-time"
+            >Ежедневно с 9:00 до 22:00</span
+          >
+        </div>
+        <a href="#" class="menu-popup__legal">Политика конфиденциальности</a>
+      </div>
+    </section>
     <main class="main">
       <div class="container">
         <section class="costs">
@@ -116,7 +174,7 @@
                 <div class="table__row-el">40-55</div>
               </div>
               <div class="table__row">
-                <div class="table__row-el">2х-комнатные</div>
+                <div class="table__row-el">2-комнатные</div>
                 <div class="table__row-el">55-75м²</div>
                 <div class="table__row-el">50 000 ₽</div>
                 <div class="table__row-el">90 000 ₽</div>
@@ -124,7 +182,7 @@
                 <div class="table__row-el">45-60</div>
               </div>
               <div class="table__row">
-                <div class="table__row-el">3х-комнатные</div>
+                <div class="table__row-el">3-комнатные</div>
                 <div class="table__row-el">75-85м²</div>
                 <div class="table__row-el">60 000 ₽</div>
                 <div class="table__row-el">100 000 ₽</div>
@@ -132,7 +190,7 @@
                 <div class="table__row-el">60-75</div>
               </div>
               <div class="table__row">
-                <div class="table__row-el">4х-комнатные</div>
+                <div class="table__row-el">4-комнатные</div>
                 <div class="table__row-el">90-110м²</div>
                 <div class="table__row-el">68 000 ₽</div>
                 <div class="table__row-el">125 000 ₽</div>
@@ -140,7 +198,7 @@
                 <div class="table__row-el">75-90</div>
               </div>
               <div class="table__row">
-                <div class="table__row-el">5х-комнатные</div>
+                <div class="table__row-el">5-комнатные</div>
                 <div class="table__row-el">100-140м²</div>
                 <div class="table__row-el">72 000 ₽</div>
                 <div class="table__row-el">136 000 ₽</div>
@@ -588,5 +646,6 @@
     <script src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.inputmask.js"></script>
     <script src="../js/formInputMask.js"></script>
+    <script src="../js/menu-popup.js"></script>
   </body>
 </html>
