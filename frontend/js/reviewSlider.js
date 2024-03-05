@@ -36,6 +36,8 @@ slider.addEventListener("mousemove", (e) => {
     rightBlock.style.display = "none";
   } else if (slider.scrollLeft === 4280 && window.innerWidth <= 1440) {
     rightBlock.style.display = "none";
+  } else if (slider.scrollLeft === 4480 && window.innerWidth <= 1024) {
+    rightBlock.style.display = "none";
   } else {
     rightBlock.style.display = "block";
   }
