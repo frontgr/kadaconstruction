@@ -82,6 +82,7 @@
     &__buttons-portfolio,
     &__buttons-cost {
       font-size: 20px;
+      height: 56px;
     }
   }
   .form-wrapper {
@@ -98,6 +99,9 @@
     }
     & .assess {
       width: 776px;
+    }
+    & .assess__heading {
+      width: 521px;
     }
     & .container {
       max-width: 1300px;
@@ -140,7 +144,8 @@
       right: 196px;
     }
     & .form__right-send__button {
-      margin-top: 51px;
+      margin-top: 61px;
+      height: 56px;
     }
     & .form__left-results-roulette {
       width: 234px;
@@ -166,7 +171,7 @@
     }
     & .form__right-flower {
       width: 174px;
-      height: 207px;
+      height: 259px;
       top: -207px;
     }
     & .form__right-inputs-name,
@@ -191,7 +196,7 @@
     }
   }
   .whyus {
-    margin-top: 32px;
+    margin-top: 65px;
     &__heading {
       margin-top: 16px;
     }
@@ -307,14 +312,14 @@
         transform: rotate(351deg);
         width: 54.46000000000001px;
         height: 65.68px;
-        top: 116px;
+        top: 70px;
         left: 93px;
       }
       &-screw-2 {
         transform: rotate(34deg);
         width: 48px;
         height: 80px;
-        top: 116px;
+        top: 70px;
         left: 85px;
       }
     }
@@ -386,6 +391,13 @@
       &:nth-child(3) {
         display: none;
       }
+    }
+    &__btns-btn {
+      height: 56px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   .map {
@@ -554,7 +566,7 @@
     max-width: 880px;
     &__head {
       &-el {
-        padding: 32px 12px;
+        padding: 12px;
         font-size: 22px;
         width: 146px;
         &:first-child {
@@ -661,6 +673,7 @@
       margin-bottom: 20px;
     }
     &__btn-btn {
+      padding: 16px 50px;
       font-size: 20px;
     }
   }
@@ -808,5 +821,34 @@
   .main-blured,
   .footer-blured {
     filter: blur(4px);
+  }
+  .container {
+    max-width: 680px;
+  }
+  .whyus {
+    &__benefits {
+      width: 680px;
+    }
+  }
+  .reviews {
+    &__containter {
+      max-width: 680px !important;
+    }
+  }
+  .company-description {
+    &__photo {
+      width: 680px;
+    }
+  }
+  .footer {
+    &__box {
+      max-width: 680px;
+    }
+  }
+  .table {
+    max-width: 680px;
+  }
+  .stages {
+    max-width: 880px;
   }
 }

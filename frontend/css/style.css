@@ -788,7 +788,7 @@
 }
 .form-wrapper .form__right-flower {
   position: absolute;
-  top: -261px;
+  top: -220px;
   right: 0;
   z-index: -1;
 }
@@ -1984,6 +1984,7 @@ a {
   }
   .promo-block__buttons-portfolio, .promo-block__buttons-cost {
     font-size: 20px;
+    height: 56px;
   }
   .form-wrapper {
     margin-top: 28px;
@@ -2000,6 +2001,9 @@ a {
   }
   .form-wrapper .assess {
     width: 776px;
+  }
+  .form-wrapper .assess__heading {
+    width: 521px;
   }
   .form-wrapper .container {
     max-width: 1300px;
@@ -2042,7 +2046,8 @@ a {
     right: 196px;
   }
   .form-wrapper .form__right-send__button {
-    margin-top: 51px;
+    margin-top: 61px;
+    height: 56px;
   }
   .form-wrapper .form__left-results-roulette {
     width: 234px;
@@ -2064,7 +2069,7 @@ a {
   }
   .form-wrapper .form__right-flower {
     width: 174px;
-    height: 207px;
+    height: 259px;
     top: -207px;
   }
   .form-wrapper .form__right-inputs-name, .form-wrapper .form__right-inputs-phone {
@@ -2087,7 +2092,7 @@ a {
     font-size: 16px;
   }
   .whyus {
-    margin-top: 32px;
+    margin-top: 65px;
   }
   .whyus__heading {
     margin-top: 16px;
@@ -2197,14 +2202,14 @@ a {
     transform: rotate(351deg);
     width: 54.46px;
     height: 65.68px;
-    top: 116px;
+    top: 70px;
     left: 93px;
   }
   .appeal__img-screw-2 {
     transform: rotate(34deg);
     width: 48px;
     height: 80px;
-    top: 116px;
+    top: 70px;
     left: 85px;
   }
   .appeal__box-item {
@@ -2266,6 +2271,13 @@ a {
   }
   .portfolio__column:nth-child(3) {
     display: none;
+  }
+  .portfolio__btns-btn {
+    height: 56px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .map {
     height: 597px;
@@ -2422,7 +2434,7 @@ a {
     max-width: 880px;
   }
   .table__head-el {
-    padding: 32px 12px;
+    padding: 12px;
     font-size: 22px;
     width: 146px;
   }
@@ -2521,6 +2533,7 @@ a {
     margin-bottom: 20px;
   }
   .learnus__btn-btn {
+    padding: 16px 50px;
     font-size: 20px;
   }
 }
@@ -2653,5 +2666,26 @@ a {
   .main-blured,
   .footer-blured {
     filter: blur(4px);
+  }
+  .container {
+    max-width: 680px;
+  }
+  .whyus__benefits {
+    width: 680px;
+  }
+  .reviews__containter {
+    max-width: 680px !important;
+  }
+  .company-description__photo {
+    width: 680px;
+  }
+  .footer__box {
+    max-width: 680px;
+  }
+  .table {
+    max-width: 680px;
+  }
+  .stages {
+    max-width: 880px;
   }
 }/*# sourceMappingURL=style.css.map */
