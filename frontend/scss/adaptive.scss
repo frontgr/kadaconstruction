@@ -1169,3 +1169,25 @@
     padding-bottom: 68px;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .header__wrapper{
+    width: 100%;
+    padding: 16px 32px;
+  }
+  .header__image-logo{
+    width: 84px;
+    height: 32px;
+  }
+  .header__hamburger{
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__wrapper{
+    width: 100%;
+    padding: 16px 20px;
+  }
+}

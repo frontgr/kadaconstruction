@@ -3,6 +3,7 @@ $white: #edf2ef;
 $orange: #ef7f2f;
 $green: #2cae39;
 
+@import "./adaptive.scss";//////ubrat!!!
 @import "./components/header.scss";
 @import "./components/main.scss";
 @import "./components/footer.scss";
