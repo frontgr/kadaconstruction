@@ -1,6 +1,9 @@
 @media screen and (max-width: 1673px) {
   .form-wrapper .form__right-notepad {
-    right: -41px;
+    right: -102px;
+    width: 312px;
+    height: 384px;
+    top: 38px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -69,6 +72,16 @@
   .promo-block__buttons-portfolio, .promo-block__buttons-cost {
     font-size: 20px;
   }
+  .form-wrapper .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-wrapper .container__form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .form-wrapper .assess {
     width: 776px;
   }
@@ -80,8 +93,77 @@
   }
   .form-wrapper .assess__description {
     font-size: 22px;
+    width: 720px;
   }
   .form-wrapper .form {
-    margin-top: 92px;
+    justify-content: center;
+    margin-top: 63px;
+  }
+  .form-wrapper .form__left,
+  .form-wrapper .form__right {
+    width: 420px;
+  }
+  .form-wrapper .form__comment {
+    font-size: 24px;
+  }
+  .form-wrapper .form__left-parameters-count-radio-container label {
+    width: 52px;
+    height: 40px;
+    margin-right: 12px;
+    font-size: 22px;
+  }
+  .form-wrapper .form__left-parameters-area-input {
+    width: 420px;
+  }
+  .form-wrapper .form__right-inputs .comment__textarea {
+    height: 160px;
+  }
+  .form-wrapper .form__left-parameters-area-input {
+    right: 0;
+  }
+  .form-wrapper .form__left-parameters-area-container span {
+    font-size: 22px;
+    right: 196px;
+  }
+  .form-wrapper .form__right-send__button {
+    margin-top: 51px;
+  }
+  .form-wrapper .form__left-results-roulette {
+    width: 234px;
+    height: 153px;
+    top: 60px;
+    left: -131px;
+  }
+  .form-wrapper .form__left-results-price {
+    font-size: 28px;
+  }
+  .form-wrapper .form__right-inputs-name, .form-wrapper .form__right-inputs-phone, .form-wrapper .form__right-send__button, .form-wrapper .form__right-inputs .comment__textarea, .form-wrapper .form__left-results,
+  .form-wrapper .form__left-results-heading,
+  .form-wrapper .form__right-send {
+    width: 420px;
+  }
+  .form-wrapper .form__right-flower {
+    width: 174px;
+    height: 207px;
+    top: -207px;
+  }
+  .form-wrapper .form__right-inputs-name, .form-wrapper .form__right-inputs-phone {
+    font-size: 22px;
+  }
+  .form-wrapper .form__right-inputs-socials .checkbox-label {
+    font-size: 16px;
+  }
+  .form-wrapper .form__right-inputs-socials .checkbox-container {
+    flex-wrap: wrap;
+  }
+  .form-wrapper .form__right-inputs .comment__textarea {
+    font-size: 22px;
+  }
+  .form-wrapper .form__right-send__button {
+    font-size: 20px;
+  }
+  .form-wrapper .form__right-send__legal {
+    text-align: center;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=adaptive.css.map */

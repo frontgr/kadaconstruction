@@ -12,7 +12,6 @@
     justify-content: space-between;
     align-items: center;
     height: 96px;
-    
   }
   &__image-logo {
     display: block;
@@ -78,16 +77,6 @@
           background-image: url("../../images/social/Button=TG\,\ State=Hover.svg");
         }
       }
-      &-vb {
-        width: 28px;
-        height: 28px;
-        background-image: url("../../images/social/Viber.svg");
-        transition: background-image 0.15s;
-        transition-timing-function: ease-out;
-        &:hover {
-          background-image: url("../../images/social/Button=Viber\,\ State=Hover.svg");
-        }
-      }
     }
   }
   &__socials {
@@ -128,4 +117,10 @@
       }
     }
   }
+  &__hamburger {
+    display: none;
+  }
+}
+.menu-popup {
+  display: none;
 }
