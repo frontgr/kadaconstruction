@@ -54,6 +54,21 @@
       />
       <img src="./images/social/Mail=Hover.svg" alt="Hover Mail" />
     </div>
+    <div class="form-sent">
+      <div class="form-sent__wrapper">
+        <h2 class="form-sent__title">Ваша заявка успешно отправлена!</h2>
+        <p class="form-sent__desc">
+          Спасибо, ваши данные были успешно отправлены!
+        </p>
+        <p class="form-sent__info">
+          Мы свяжемся с вами в течение 1 рабочего дня.
+        </p>
+        <button class="form-sent__btn">Вернуться на главную</button>
+        <button class="form-sent__close">
+          <img src="./images/assets/logo/close.svg" alt="Close" />
+        </button>
+      </div>
+    </div>
     <header class="header">
       <div class="header__wrapper">
         <div class="header__logo">
@@ -233,6 +248,7 @@
                         required
                         name="counts"
                         value="1"
+                        checked
                       />
                       <label for="option1">1</label>
                       <input
@@ -284,6 +300,7 @@
                           name="types"
                           required
                           value="1"
+                          checked
                         />
                         <label for="option11">Черновой</label>
                       </div>
@@ -340,7 +357,7 @@
                     class="form__left-results-price"
                     id="form__left-results-heading"
                   >
-                    556 000 ₽
+                    125 000 ₽
                   </h2>
                 </div>
               </div>
@@ -1142,6 +1159,7 @@
     <script type="text/javascript" src="/js/jquery.inputmask.js"></script>
     <script src="./js/formInputMask.js"></script>
     <script src="./js/reviewSlider.js"></script>
+    <script type="module" src="./js/form.js"></script>
     <script src="./js/menu-popup.js"></script>
   </body>
 </html>
