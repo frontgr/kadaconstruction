@@ -39,7 +39,9 @@ body {
   overflow-x: hidden;
   background-color: $white;
 }
-
+.main{
+  overflow-x: hidden;
+}
 .container {
   max-width: 1240px;
   width: 100%;
