@@ -1563,6 +1563,19 @@
   .company-description__photo{
     width: 100%;
   }
+  .footer__links{
+    gap: 12px;
+    &-item{
+      gap: 12px;
+    }
+  }
+  .footer__contacts{
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .footer__rights-inst{
+    top: -362px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1679,4 +1692,10 @@
     }
   }
 
+}
+
+@media screen and (max-width: 465px) {
+  .footer__rights-inst{
+    top: -380px;
+  }
 }
