@@ -1551,6 +1551,18 @@
   .reviews__box-item-text{
     gap: 8px;
   }
+  .company-description__text p{
+    font-size: 20px;
+  }
+  .company-description__heading{
+    margin-bottom: 8px;
+  }
+  .company-description .container{
+    gap: 16px;
+  }
+  .company-description__photo{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1658,4 +1670,13 @@
   .reviews__box-item-header-heading{
     font-size: 22px;
   }
+  
+  .company-description__heading{
+    margin-bottom: 4px;
+    font-size: 22px;
+    & span{
+      font-size: 22px;
+    }
+  }
+
 }
