@@ -42,3 +42,24 @@ slider.addEventListener("mousemove", (e) => {
     rightBlock.style.display = "block";
   }
 });
+
+
+let scrollLeftBtn = $('.reviews__btns-btn_prev');
+let scrollRightBtn = $('.reviews__btns-btn_next');
+let scrollItem = $('.reviews__box-item')[0];
+const scrollAmount = 455; // Adjust this value as needed
+
+scrollLeftBtn.on('click', () => {
+  if(window.innerWidth <= 480){
+    slider.scrollLeft -= ($(scrollItem).width()+84)
+  }else{
+    slider.scrollLeft -= scrollAmount;
+  }
+});
+scrollRightBtn.on('click', () => {
+  if(window.innerWidth <= 480){
+    slider.scrollLeft += ($(scrollItem).width()+84)
+  }else{
+    slider.scrollLeft += scrollAmount;
+  }
+});
