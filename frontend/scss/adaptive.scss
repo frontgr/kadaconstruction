@@ -1168,6 +1168,10 @@
   .allservices {
     padding-bottom: 68px;
   }
+  .map__block{
+    width: 330px;
+    height: unset;
+  }
 }
 
 
@@ -1475,7 +1479,27 @@
       font-size: 18px;
     }
   }
+  .map__block{
+    display: none;
+  }
+  .map__block-adaptive{
+    display: block;
+    width: 100%;
+    padding: 0 32px;
+    margin-bottom: 20px;
+  }
+  .map__heading-main{
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .map__tel{
+    font-size: 20px;
+  }
+  .map__heading-address{
+    font-size: 28px;
+  }
 }
+
 @media screen and (max-width: 480px) {
   .container{
     max-width: 280px;
