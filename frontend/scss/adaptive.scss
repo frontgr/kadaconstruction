@@ -1379,6 +1379,21 @@
     top: 85%;
     left: -11px;
   }
+  .kinds__image-img{
+    width: 100%;
+    height: unset;
+    margin-bottom: 10px;
+  }
+  .kinds__item{
+    width: 100%;
+  }
+  .kinds__item-title{
+    width: 26px;
+    margin-bottom: 4px;
+  }
+  .kinds__item-desc{
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 480px) {
   .container{
@@ -1445,4 +1460,5 @@
   .whyus__heading h2, .whyus__heading span{
     font-size: 26px;
   }
+
 }
