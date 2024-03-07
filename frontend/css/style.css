@@ -1135,6 +1135,9 @@
   .promo-block__heading-h1 span:nth-child(1) img {
     width: 130px;
   }
+  .container {
+    max-width: 416px;
+  }
   .form-wrapper .container {
     max-width: 416px;
     width: 100%;
@@ -1259,8 +1262,38 @@
   .form-wrapper .form__right-inputs .comment__textarea {
     width: 100%;
   }
+  .whyus {
+    height: unset;
+  }
+  .whyus__heading h2, .whyus__heading span {
+    font-size: 28px;
+  }
+  .whyus__benefits {
+    margin-top: 16px;
+    width: 100%;
+  }
+  .whyus__benefits-item {
+    width: 100%;
+    height: unset;
+    padding: 20px 16px;
+  }
+  .whyus__benefits-item:nth-child(3) {
+    height: unset;
+  }
+  .whyus__benefits-item div h4 {
+    font-size: 20px;
+    height: unset;
+  }
+  .whyus__benefits-item:nth-child(3) span:last-child img {
+    width: 279px;
+    top: 85%;
+    left: -11px;
+  }
 }
 @media screen and (max-width: 480px) {
+  .container {
+    max-width: 280px;
+  }
   .header__wrapper {
     width: 100%;
     padding: 16px 20px;
@@ -1300,6 +1333,25 @@
   .form-wrapper .form__left-results-roulette {
     top: 107px;
     left: -66px;
+  }
+  .whyus__benefits-item:nth-child(3) h3 {
+    font-size: 20px;
+  }
+  .whyus__benefits-item:nth-child(3) span:last-child {
+    font-size: 20px;
+  }
+  .whyus__benefits-item:nth-child(3) span:last-child img {
+    width: 161px;
+    top: 91%;
+  }
+  .whyus__benefits-item:nth-child(3) span {
+    font-size: 20px;
+  }
+  .whyus__benefits {
+    margin-bottom: 58px;
+  }
+  .whyus__heading h2, .whyus__heading span {
+    font-size: 26px;
   }
 }
 .header {
@@ -4342,6 +4394,9 @@ a {
   .promo-block__heading-h1 span:nth-child(1) img {
     width: 130px;
   }
+  .container {
+    max-width: 416px;
+  }
   .form-wrapper .container {
     max-width: 416px;
     width: 100%;
@@ -4466,8 +4521,38 @@ a {
   .form-wrapper .form__right-inputs .comment__textarea {
     width: 100%;
   }
+  .whyus {
+    height: unset;
+  }
+  .whyus__heading h2, .whyus__heading span {
+    font-size: 28px;
+  }
+  .whyus__benefits {
+    margin-top: 16px;
+    width: 100%;
+  }
+  .whyus__benefits-item {
+    width: 100%;
+    height: unset;
+    padding: 20px 16px;
+  }
+  .whyus__benefits-item:nth-child(3) {
+    height: unset;
+  }
+  .whyus__benefits-item div h4 {
+    font-size: 20px;
+    height: unset;
+  }
+  .whyus__benefits-item:nth-child(3) span:last-child img {
+    width: 279px;
+    top: 85%;
+    left: -11px;
+  }
 }
 @media screen and (max-width: 480px) {
+  .container {
+    max-width: 280px;
+  }
   .header__wrapper {
     width: 100%;
     padding: 16px 20px;
@@ -4507,5 +4592,24 @@ a {
   .form-wrapper .form__left-results-roulette {
     top: 107px;
     left: -66px;
+  }
+  .whyus__benefits-item:nth-child(3) h3 {
+    font-size: 20px;
+  }
+  .whyus__benefits-item:nth-child(3) span:last-child {
+    font-size: 20px;
+  }
+  .whyus__benefits-item:nth-child(3) span:last-child img {
+    width: 161px;
+    top: 91%;
+  }
+  .whyus__benefits-item:nth-child(3) span {
+    font-size: 20px;
+  }
+  .whyus__benefits {
+    margin-bottom: 58px;
+  }
+  .whyus__heading h2, .whyus__heading span {
+    font-size: 26px;
   }
 }/*# sourceMappingURL=style.css.map */
