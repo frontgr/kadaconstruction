@@ -1304,6 +1304,28 @@
   .kinds__item-desc {
     font-size: 20px;
   }
+  .appeal__box-item {
+    font-size: 16px;
+    line-height: 22.4px;
+    padding: 8px 8px;
+  }
+  .appeal__img-drill {
+    top: 40px;
+    right: -84px;
+  }
+  .appeal__box {
+    gap: 15px;
+  }
+  .appeal__img-screw-1 {
+    top: 175px;
+  }
+  .appeal__img-screw-2 {
+    top: 170px;
+  }
+  .appeal__img-key {
+    width: 225px;
+    height: 195px;
+  }
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -1367,6 +1389,33 @@
   }
   .whyus__heading h2, .whyus__heading span {
     font-size: 26px;
+  }
+  .appeal__box-item {
+    width: 100%;
+    text-align: center;
+  }
+  .appeal__img-drill {
+    top: 56px;
+    right: -37px;
+    width: 135px;
+    height: 118px;
+  }
+  .appeal__box {
+    gap: 15px;
+  }
+  .appeal__img-screw-1 {
+    top: 247px;
+    left: -23px;
+  }
+  .appeal__img-screw-2 {
+    top: 242px;
+    left: -36px;
+  }
+  .appeal__img-key {
+    top: 60px;
+    left: -35px;
+    width: 134px;
+    height: 76px;
   }
 }
 .header {
@@ -4578,6 +4627,28 @@ a {
   .kinds__item-desc {
     font-size: 20px;
   }
+  .appeal__box-item {
+    font-size: 16px;
+    line-height: 22.4px;
+    padding: 8px 8px;
+  }
+  .appeal__img-drill {
+    top: 40px;
+    right: -84px;
+  }
+  .appeal__box {
+    gap: 15px;
+  }
+  .appeal__img-screw-1 {
+    top: 175px;
+  }
+  .appeal__img-screw-2 {
+    top: 170px;
+  }
+  .appeal__img-key {
+    width: 225px;
+    height: 195px;
+  }
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -4641,5 +4712,32 @@ a {
   }
   .whyus__heading h2, .whyus__heading span {
     font-size: 26px;
+  }
+  .appeal__box-item {
+    width: 100%;
+    text-align: center;
+  }
+  .appeal__img-drill {
+    top: 56px;
+    right: -37px;
+    width: 135px;
+    height: 118px;
+  }
+  .appeal__box {
+    gap: 15px;
+  }
+  .appeal__img-screw-1 {
+    top: 247px;
+    left: -23px;
+  }
+  .appeal__img-screw-2 {
+    top: 242px;
+    left: -36px;
+  }
+  .appeal__img-key {
+    top: 60px;
+    left: -35px;
+    width: 134px;
+    height: 76px;
   }
 }/*# sourceMappingURL=style.css.map */
