@@ -214,7 +214,7 @@ submitBtn.on('click', async (e)=>{
         textarea: form_comment[0].value,
         counts: `${calculator.counts_room}`,
         types: `${+calculator.type_repair-1}`,
-        area_room: `${calculator.area_room}`,
+        area: `${calculator.area_room}`,
         whatsapp: `${form_writeTo[0].checked}`,
         telegram: `${form_writeTo[1].checked}`,
         viber: `${form_writeTo[2].checked}`,
