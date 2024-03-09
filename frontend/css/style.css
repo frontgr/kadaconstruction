@@ -1870,6 +1870,77 @@
   background-image: url("../../images/company-description/drill.jpeg");
 }
 
+.form-sent {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(33, 39, 56, 0.36);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  z-index: 100;
+}
+.form-sent__wrapper {
+  background-color: #edf2ef;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+  padding: 20px;
+  position: relative;
+}
+.form-sent__title {
+  color: #212738;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 136%;
+  text-align: left;
+  padding-bottom: 12px;
+  width: 517px;
+}
+.form-sent__desc {
+  font-size: 24px;
+  line-height: 132%;
+  text-align: left;
+  padding-bottom: 12px;
+  width: 450px;
+}
+.form-sent__info {
+  font-size: 24px;
+  line-height: 132%;
+  text-align: left;
+  padding-bottom: 48px;
+}
+.form-sent__btn {
+  width: 100%;
+  color: #edf2ef;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 12px;
+  background: #ef7f2f;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.form-sent__btn:hover {
+  background-color: rgb(255, 160, 92);
+}
+.form-sent__close {
+  position: absolute;
+  right: 28px;
+  top: 28px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.form-sent__close img {
+  display: block;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1889,6 +1960,7 @@ html {
 body {
   overflow-x: hidden;
   background-color: #edf2ef;
+  position: relative;
 }
 
 .main {

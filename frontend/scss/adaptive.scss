@@ -1168,6 +1168,7 @@
   .allservices {
     padding-bottom: 68px;
   }
+
   .map__block{
     width: 330px;
     height: unset;
@@ -1625,7 +1626,11 @@
     scrollbar-width: none;
     padding: 6px 126px;
     gap: 16px;
-}
+=======
+  .container__form-container {
+    margin-top: 20px;
+  }
+
 
   .stages__box::-webkit-scrollbar {
     width: 0;

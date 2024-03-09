@@ -1,9 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KADA | Услуги и цены</title>
+    <title>
+      KADA | Услуги и цены - ремонт под ключ в Москве, создаём комфорт и красоту
+      с нуля
+    </title>
+    <meta
+      name="description"
+      content="Наши услуги по ремонту квартир и коттеджей предоставляют широкий спектр возможностей для создания уютного и функционального жилья. Мы предлагаем профессиональные услуги по ремонту любого уровня сложности, а также гибкую систему ценообразования, которая позволяет выбрать оптимальный вариант для вашего бюджета. Ознакомьтесь с нашими услугами и ценами, чтобы начать планирование вашего идеального ремонта."
+    />
+    <meta
+      name="keywords"
+      content="ремонт, квартира, коттедж, ремонт под ключ, профессиональный ремонт, ремонтные работы, отделка, строительство, ремонт квартир цены, ремонт коттеджей, ремонт квартир под ключ, ремонт квартир в новостройках."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kadaconstruction.ru" />
+    <meta
+      property="og:image"
+      content="./images/assets/logo/Button=Главная, State=Default.svg"
+    />
+    <meta
+      property="og:title"
+      content="KADA | Услуги и цены - ремонт под ключ в Москве, создаём комфорт и красоту с нуля"
+    />
+    <meta
+      property="og:description"
+      content="Наши услуги по ремонту квартир и коттеджей предоставляют широкий спектр возможностей для создания уютного и функционального жилья. Мы предлагаем профессиональные услуги по ремонту любого уровня сложности, а также гибкую систему ценообразования, которая позволяет выбрать оптимальный вариант для вашего бюджета. Ознакомьтесь с нашими услугами и ценами, чтобы начать планирование вашего идеального ремонта."
+    />
+    <meta name="robots" content="index" />
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="shortcut icon"
@@ -12,6 +38,21 @@
     />
   </head>
   <body>
+    <div class="form-sent">
+      <div class="form-sent__wrapper">
+        <h2 class="form-sent__title">Ваша заявка успешно отправлена!</h2>
+        <p class="form-sent__desc">
+          Спасибо, ваши данные были успешно отправлены!
+        </p>
+        <p class="form-sent__info">
+          Мы свяжемся с вами в течение 1 рабочего дня.
+        </p>
+        <button class="form-sent__btn">Закрыть</button>
+        <button class="form-sent__close">
+          <img src="../images/assets/logo/close.svg" alt="Close" />
+        </button>
+      </div>
+    </div>
     <header class="header">
       <div class="header__wrapper">
         <div class="header__logo">
@@ -79,7 +120,7 @@
         </a>
         <ul class="menu-popup__menu">
           <li class="menu-popup__menu-item">
-            <a href="#" class="menu-popup__menu-link">Услуги и цены</a>
+            <a href="#" class="menu-popup__menu-link"  style="color: #ef7f2f">Услуги и цены</a>
           </li>
           <li class="menu-popup__menu-item">
             <a href="./portfolio.html" class="menu-popup__menu-link"
@@ -559,6 +600,7 @@
                         required
                         name="counts"
                         value="1"
+                        checked
                       />
                       <label for="option1">1</label>
                       <input
@@ -610,6 +652,7 @@
                           name="types"
                           required
                           value="1"
+                          checked
                         />
                         <label for="option11">Черновой</label>
                       </div>
@@ -666,7 +709,7 @@
                     class="form__left-results-price"
                     id="form__left-results-heading"
                   >
-                    556 000 ₽
+                    125 000 ₽
                   </h2>
                 </div>
               </div>
@@ -690,7 +733,6 @@
                     placeholder="+7 (___) ___-__-__"
                     required
                     class="form__right-inputs-phone"
-                    wfd-id="id10"
                   />
                   <div class="form__right-inputs-socials">
                     <div class="checkbox-container">
@@ -846,6 +888,7 @@
     <script src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.inputmask.js"></script>
     <script src="../js/formInputMask.js"></script>
+    <script src="../js/form.js"></script>
     <script src="../js/menu-popup.js"></script>
   </body>
 </html>
