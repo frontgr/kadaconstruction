@@ -32,3 +32,12 @@ function changeTable(index){
     })
     table_body[index].classList.add('active')
 }
+let table_list = document.querySelectorAll('.table-adaptive__list')
+let table_adaptiv_plus = document.querySelectorAll('.table-adaptive__box-btn')
+table_adaptiv_plus.forEach((plus, index)=>{
+    plus.addEventListener('click', ()=>{
+        table_list[index].classList.toggle('active');
+        console.log(123);
+    })
+
+})
