@@ -3,6 +3,7 @@ $white: #edf2ef;
 $orange: #ef7f2f;
 $green: #2cae39;
 
+
 @import "./components/header.scss";
 @import "./components/main.scss";
 @import "./components/footer.scss";
@@ -40,7 +41,9 @@ body {
   background-color: $white;
   position: relative;
 }
-
+.main{
+  overflow-x: hidden;
+}
 .container {
   max-width: 1240px;
   width: 100%;
