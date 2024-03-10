@@ -1173,6 +1173,11 @@
     width: 330px;
     height: unset;
   }
+  .portfolio__hover::before,
+  .portfolio__hover::after{
+    width: 44px;
+    height: 44px;
+  }
 }
 
 
@@ -1626,7 +1631,7 @@
     scrollbar-width: none;
     padding: 6px 126px;
     gap: 16px;
-=======
+  }
   .container__form-container {
     margin-top: 20px;
   }
@@ -1941,6 +1946,23 @@
     width: 174px;
     height: 161px;
     right: 19%;
+  }
+  .portfolio__hover::before,
+  .portfolio__hover::after{
+    width: 36px;
+    height: 36px;
+  }
+  .portfolio__hover::before{
+    top: 8px;
+    left: 8px;
+  }
+  .portfolio__hover::after{
+    bottom: 8px;
+    right: 8px;
+  }
+  .portfolio__hover{
+    font-size: 20px;
+    padding: 0 12px;
   }
 }
 
