@@ -1168,18 +1168,23 @@
   .allservices {
     padding-bottom: 68px;
   }
+
   .map__block {
     width: 330px;
     height: unset;
   }
   .portfolio__hover::before,
-  .portfolio__hover::after{
+  .portfolio__hover::after {
     width: 44px;
     height: 44px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .reviews__block-right,
+  .reviews__block-left {
+    display: none !important;
+  }
   .header__wrapper {
     width: 100%;
     padding: 16px 32px;
@@ -1371,19 +1376,14 @@
         height: 268px;
         padding: 0 24px;
         align-items: center;
-        & div{
+        & div {
           gap: 4px;
         }
-        &:nth-child(3){
-          height: 268px;
-          
-        }
-        &:nth-child(4){
-          align-items: center;
-        height: unset;
-        padding: 20px 16px;
         &:nth-child(3) {
-          height: unset;
+          height: 268px;
+        }
+        &:nth-child(4) {
+          align-items: center;
         }
         & div h4 {
           font-size: 20px;
@@ -1867,44 +1867,35 @@
       left: -66px;
     }
   }
-
-  .whyus__benefits-item{
+  .whyus__benefits-item {
     height: 300px;
     padding: 0 16px;
-    & h3{
+    & h3 {
       line-height: 31px;
     }
     &:nth-child(3),
-    &:nth-child(4){
+    &:nth-child(4) {
       height: 300px;
     }
-    &:nth-child(3){
+    &:nth-child(3) {
       padding: 0 16px;
-      & h3{
+      & h3 {
         letter-spacing: 1px;
       }
     }
   }
-  .whyus__benefits-item:nth-child(3) h3{
-
   .whyus__benefits-item:nth-child(3) h3 {
-
     font-size: 20px;
     line-height: 24px;
   }
   .whyus__benefits-item:nth-child(3) span:last-child {
     font-size: 20px;
   }
-
-  .whyus__benefits-item:nth-child(3) span:last-child img{
+  .whyus__benefits-item:nth-child(3) span:last-child img {
     width: 236px;
     top: 84%;
     left: -1px;
     z-index: -1;
-  .whyus__benefits-item:nth-child(3) span:last-child img {
-    width: 161px;
-    top: 91%;
-
   }
   .whyus__benefits-item:nth-child(3) span {
     font-size: 20px;
@@ -2009,19 +2000,19 @@
     right: 19%;
   }
   .portfolio__hover::before,
-  .portfolio__hover::after{
+  .portfolio__hover::after {
     width: 36px;
     height: 36px;
   }
-  .portfolio__hover::before{
+  .portfolio__hover::before {
     top: 8px;
     left: 8px;
   }
-  .portfolio__hover::after{
+  .portfolio__hover::after {
     bottom: 8px;
     right: 8px;
   }
-  .portfolio__hover{
+  .portfolio__hover {
     font-size: 20px;
     padding: 0 12px;
   }
