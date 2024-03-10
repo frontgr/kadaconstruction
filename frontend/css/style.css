@@ -3696,8 +3696,30 @@ a {
     top: 171px;
     transform: rotate(335deg);
   }
+  .form-sent__wrapper {
+    width: 416px;
+    height: 338px;
+  }
+  .form-sent__wrapper p {
+    font-size: 20px;
+  }
+  .form-sent__info {
+    padding-bottom: 24px;
+  }
+  .form-sent__title {
+    width: auto;
+    font-size: 28px;
+  }
 }
 @media screen and (max-width: 480px) {
+  .form-sent__wrapper {
+    width: 280px;
+    height: 402px;
+  }
+  .form-sent__wrapper p {
+    width: auto;
+    font-size: 20px;
+  }
   .container {
     max-width: 280px;
   }
@@ -3778,7 +3800,8 @@ a {
   .whyus__benefits {
     margin-bottom: 58px;
   }
-  .whyus__heading h2, .whyus__heading span {
+  .whyus__heading h2,
+  .whyus__heading span {
     font-size: 26px;
   }
   .appeal__box-item {
