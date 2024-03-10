@@ -1,70 +1,69 @@
-.form-sent{
-    position: fixed;
-    inset: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(33, 39, 56, 0.36);
-    backdrop-filter: blur(8px);
-    z-index: 100;
-    &__wrapper{
-        background-color: $white;
-        border-radius: 20px;
-        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
-        padding: 20px;
-        position: relative;
+.form-sent {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(33, 39, 56, 0.36);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  &__wrapper {
+    background-color: $white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+    padding: 20px;
+    position: relative;
+  }
+  &__title {
+    color: $black;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 136%;
+    text-align: left;
+    padding-bottom: 12px;
+    width: 517px;
+  }
+  &__desc {
+    font-size: 24px;
+    line-height: 132%;
+    text-align: left;
+    padding-bottom: 12px;
+    width: 450px;
+  }
+  &__info {
+    font-size: 24px;
+    line-height: 132%;
+    text-align: left;
+    padding-bottom: 48px;
+  }
+  &__btn {
+    width: 100%;
+    color: $white;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 12px;
+    background: $orange;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: rgba(255, 160, 92, 1);
     }
-    &__title{
-        color: $black;
-        font-size: 44px;
-        font-weight: 700;
-        line-height: 136%;
-        text-align: left;    
-        padding-bottom: 12px; 
-        width: 517px;  
+  }
+  &__close {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    & img {
+      display: block;
     }
-    &__desc{
-        font-size: 24px;
-        line-height: 132%;
-        text-align: left; 
-        padding-bottom: 12px;
-        width: 450px;
-    }
-    &__info{
-        font-size: 24px;
-        line-height: 132%;
-        text-align: left; 
-        padding-bottom: 48px;
-
-    }
-    &__btn{
-        width: 100%;
-        color: $white;
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 120%;
-        text-align: center;
-        padding: 20px 0;
-        border-radius: 12px;
-        background: $orange;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        &:hover{
-            background-color: rgba(255, 160, 92, 1);
-        }
-    }
-    &__close{
-        position: absolute;
-        right: 28px;
-        top: 28px;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        background-color: transparent;
-        & img{
-            display: block;
-        }
-    }
+  }
 }

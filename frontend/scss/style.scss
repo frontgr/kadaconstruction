@@ -3,7 +3,6 @@ $white: #edf2ef;
 $orange: #ef7f2f;
 $green: #2cae39;
 
-
 @import "./components/header.scss";
 @import "./components/main.scss";
 @import "./components/footer.scss";
@@ -41,7 +40,7 @@ body {
   background-color: $white;
   position: relative;
 }
-.main{
+.main {
   overflow-x: hidden;
 }
 .container {
@@ -58,7 +57,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 input,
 textarea {
   background-color: $white;
@@ -66,7 +64,6 @@ textarea {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-
 a {
   text-decoration: none;
 }
