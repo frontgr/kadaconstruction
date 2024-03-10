@@ -3089,6 +3089,11 @@ a {
     width: 330px;
     height: unset;
   }
+  .portfolio__hover::before,
+  .portfolio__hover::after {
+    width: 44px;
+    height: 44px;
+  }
 }
 @media screen and (max-width: 768px) {
   .header__wrapper {
@@ -3272,11 +3277,18 @@ a {
   }
   .whyus__benefits-item {
     width: 100%;
-    height: unset;
-    padding: 20px 16px;
+    height: 268px;
+    padding: 0 24px;
+    align-items: center;
+  }
+  .whyus__benefits-item div {
+    gap: 4px;
   }
   .whyus__benefits-item:nth-child(3) {
-    height: unset;
+    height: 268px;
+  }
+  .whyus__benefits-item:nth-child(4) {
+    align-items: center;
   }
   .whyus__benefits-item div h4 {
     font-size: 20px;
@@ -3530,6 +3542,9 @@ a {
     padding: 6px 126px;
     gap: 16px;
   }
+  .container__form-container {
+    margin-top: 20px;
+  }
   .stages__box::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -3748,18 +3763,39 @@ a {
     top: 107px;
     left: -66px;
   }
+  .whyus__benefits-item {
+    height: 300px;
+    padding: 0 16px;
+  }
+  .whyus__benefits-item h3 {
+    line-height: 31px;
+  }
+  .whyus__benefits-item:nth-child(3), .whyus__benefits-item:nth-child(4) {
+    height: 300px;
+  }
+  .whyus__benefits-item:nth-child(3) {
+    padding: 0 16px;
+  }
+  .whyus__benefits-item:nth-child(3) h3 {
+    letter-spacing: 1px;
+  }
   .whyus__benefits-item:nth-child(3) h3 {
     font-size: 20px;
+    line-height: 24px;
   }
   .whyus__benefits-item:nth-child(3) span:last-child {
     font-size: 20px;
   }
   .whyus__benefits-item:nth-child(3) span:last-child img {
-    width: 161px;
-    top: 91%;
+    width: 236px;
+    top: 84%;
+    left: -1px;
+    z-index: -1;
   }
   .whyus__benefits-item:nth-child(3) span {
     font-size: 20px;
+    position: relative;
+    z-index: 2;
   }
   .whyus__benefits {
     margin-bottom: 58px;
@@ -3856,6 +3892,23 @@ a {
     width: 174px;
     height: 161px;
     right: 19%;
+  }
+  .portfolio__hover::before,
+  .portfolio__hover::after {
+    width: 36px;
+    height: 36px;
+  }
+  .portfolio__hover::before {
+    top: 8px;
+    left: 8px;
+  }
+  .portfolio__hover::after {
+    bottom: 8px;
+    right: 8px;
+  }
+  .portfolio__hover {
+    font-size: 20px;
+    padding: 0 12px;
   }
 }
 @media screen and (max-width: 465px) {
