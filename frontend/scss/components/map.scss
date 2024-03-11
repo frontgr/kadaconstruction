@@ -65,6 +65,10 @@
   &__address {
     font-weight: 500;
     font-size: 24px;
+    transition: all 0.2s;
+    &:hover {
+      color: $orange;
+    }
   }
   &__asterisk {
     font-weight: 500;
@@ -80,7 +84,7 @@
     }
   }
 }
-.map__block-adaptive{
+.map__block-adaptive {
   display: none;
   padding: 20px 0;
   box-shadow: rgba(0, 0, 0, 0.45);
