@@ -892,9 +892,10 @@
         margin-top: 36px;
       }
       &__left-results {
+        height: 148px;
         background-color: $white;
         &-roulette {
-          top: 60px;
+          top: 27px;
           left: -108px;
         }
       }
@@ -1026,7 +1027,7 @@
     }
   }
   .map__block {
-    top: 48px;
+    top: 38px;
   }
   .footer__box {
     flex-direction: column;
