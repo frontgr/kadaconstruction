@@ -1720,11 +1720,14 @@
     width: 100%;
   }
   .table-adaptive {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 16px;
     position: relative;
     z-index: 10;
+    &.active{
+      display: flex;
+    }
   }
   .table-adaptive__list {
     display: flex;
