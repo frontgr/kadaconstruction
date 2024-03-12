@@ -20,7 +20,12 @@ table_btn.forEach((el, index)=>{
             el.classList.remove('active')
         })
         el.classList.add('active')
-        changeTable(index)
+        if(window.innerWidth<=768){
+            changeTableAdaptive(index)
+        }else{
+            changeTable(index)
+
+        }
     })
 })
 
@@ -32,12 +37,24 @@ function changeTable(index){
     })
     table_body[index].classList.add('active')
 }
+
+let table_body_adaptive = document.querySelectorAll('.table-adaptive');
+
+function changeTableAdaptive(index){
+    table_body_adaptive.forEach(el=>{
+        el.classList.remove('active')
+    })
+    table_body_adaptive[index].classList.add('active')
+    table_list.forEach((el, index)=>{
+        el.classList.remove('active');
+    })
+}
+
 let table_list = document.querySelectorAll('.table-adaptive__list')
 let table_adaptiv_plus = document.querySelectorAll('.table-adaptive__box-btn')
 table_adaptiv_plus.forEach((plus, index)=>{
     plus.addEventListener('click', ()=>{
         table_list[index].classList.toggle('active');
-        console.log(123);
     })
 
 })
