@@ -1502,6 +1502,9 @@
     width: 100%;
     padding: 0 32px;
     margin-bottom: 20px;
+    & br{
+      display: none;
+    }
   }
   .map__heading-main {
     font-size: 28px;
@@ -1512,6 +1515,12 @@
   }
   .map__heading-address {
     font-size: 28px;
+  }
+  .map__social,
+  .map__mail,
+  .map__social-networks,
+  .map__fromto{
+    margin-bottom: 8px;
   }
   .reviews__heading {
     font-size: 28px;
