@@ -1836,7 +1836,8 @@
     }
   }
   .container {
-    max-width: 280px;
+    max-width: 100%;
+    padding: 0 20px;
   }
   .header__wrapper {
     width: 100%;
@@ -1852,11 +1853,13 @@
     }
   }
   .promo-block__wrapper {
-    width: 280px;
+    width: 100%;
+    padding: 0 20px;
   }
   .form-wrapper {
     & .container {
-      max-width: 280px;
+      max-width: 100%;
+      padding: 0 20px;
     }
     & .assess__heading {
       font-weight: 700;
@@ -1988,7 +1991,7 @@
     gap: 4px;
   }
   .table-adaptive__item::after {
-    width: 242px;
+    width: 100%;
   }
   .costs__table-adaptive {
     width: 102vw;
@@ -2004,13 +2007,24 @@
   .table-adaptive__list {
     padding: 16px 20px;
   }
+  .costs__info{
+    width: 100%;
+  }
+  .costs__info-text{
+    width: 100%;
+  }
+  .costs__info-title{
+    text-align: center;
+  }
   .costs__info-img_coin {
-    left: 38px;
+    left: -131px;
+    top: 81%;
   }
   .costs__info-img_calc {
     width: 174px;
     height: 161px;
-    right: 19%;
+    right: -16%;
+    top: 96%;
   }
   .portfolio__hover::before,
   .portfolio__hover::after {
