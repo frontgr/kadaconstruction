@@ -1554,6 +1554,7 @@
   }
   .reviews__box {
     align-items: stretch;
+    overflow-x: hidden;
   }
   .reviews__btns {
     display: flex;
