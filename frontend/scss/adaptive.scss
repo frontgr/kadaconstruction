@@ -1843,6 +1843,9 @@
   .form-wrapper .form__right-inputs .comment__textarea{
     height: 188px;
   }
+  .company-description__photo{
+    height: 416px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2079,6 +2082,9 @@
   }
   .reviews__box-item{
     margin-bottom: 16px;
+  }
+  .company-description__photo{
+    height: 280px;
   }
 }
 

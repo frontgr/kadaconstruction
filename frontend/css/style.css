@@ -1752,6 +1752,9 @@
   .form-wrapper .form__right-inputs .comment__textarea {
     height: 188px;
   }
+  .company-description__photo {
+    height: 416px;
+  }
 }
 @media screen and (max-width: 479px) {
   .form-sent__wrapper {
@@ -1983,6 +1986,9 @@
   }
   .reviews__box-item {
     margin-bottom: 16px;
+  }
+  .company-description__photo {
+    height: 280px;
   }
 }
 @media screen and (max-width: 465px) {
@@ -5738,6 +5744,9 @@ a {
   .form-wrapper .form__right-inputs .comment__textarea {
     height: 188px;
   }
+  .company-description__photo {
+    height: 416px;
+  }
 }
 @media screen and (max-width: 479px) {
   .form-sent__wrapper {
@@ -5969,6 +5978,9 @@ a {
   }
   .reviews__box-item {
     margin-bottom: 16px;
+  }
+  .company-description__photo {
+    height: 280px;
   }
 }
 @media screen and (max-width: 465px) {
