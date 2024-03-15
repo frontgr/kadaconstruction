@@ -83,6 +83,9 @@
       color: $orange;
     }
   }
+  &__script-mobile{
+    display: none;
+  }
 }
 .map__block-adaptive {
   display: none;
