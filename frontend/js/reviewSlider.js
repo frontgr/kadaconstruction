@@ -51,14 +51,14 @@ const scrollAmount = 455; // Adjust this value as needed
 
 scrollLeftBtn.on('click', () => {
   if(window.innerWidth <= 480){
-    slider.scrollLeft -= ($(scrollItem).width()+84)
+    slider.scrollLeft -= ($(scrollItem).width()+41)
   }else{
     slider.scrollLeft -= scrollAmount;
   }
 });
 scrollRightBtn.on('click', () => {
   if(window.innerWidth <= 480){
-    slider.scrollLeft += ($(scrollItem).width()+84)
+    slider.scrollLeft += ($(scrollItem).width()+41)
   }else{
     slider.scrollLeft += scrollAmount;
   }

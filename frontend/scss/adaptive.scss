@@ -1572,6 +1572,7 @@
   }
   .reviews__box-item-header-heading {
     font-size: 24px;
+    text-align: left;
   }
   .reviews__box-item-header {
     gap: 8px;
@@ -1975,11 +1976,19 @@
     height: 104px;
   }
   .reviews__box-item {
-    margin-top: 16px;
-    width: 95%;
+    margin-top: 0;
+    width: 102%;
     height: unset;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 0;
+    border: none;
+    border-radius: 0;
+    margin-right: 0;
+    box-shadow: none;
+  }
+  .reviews__box{
+    gap: 0;
   }
   .reviews__containter {
     max-width: 100vw !important;
@@ -2064,6 +2073,12 @@
   .portfolio__hover {
     font-size: 20px;
     padding: 0 12px;
+  }
+  .reviews__box{
+    margin-bottom: 0;
+  }
+  .reviews__box-item{
+    margin-bottom: 16px;
   }
 }
 
