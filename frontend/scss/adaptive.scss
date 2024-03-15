@@ -1826,6 +1826,20 @@
     width: auto;
     font-size: 28px;
   }
+  .form-wrapper .form__left-parameters-area-input,
+  .form-wrapper .form__right-inputs-name, .form-wrapper .form__right-inputs-phone,
+  .form-wrapper .form__right-inputs .comment__textarea{
+    font-size: 20px;
+  }
+  .form-wrapper .form__left-results-price{
+    font-size: 26px;
+  }
+  .form-wrapper .form__right-send__button{
+    height: 46px;
+  }
+  .form-wrapper .form__right-inputs .comment__textarea{
+    height: 188px;
+  }
 }
 
 @media screen and (max-width: 479px) {
