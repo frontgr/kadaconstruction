@@ -3548,6 +3548,9 @@
   text-align: center;
   transition: all 0.3s;
   justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .portfolio__hover::before {
   content: "";

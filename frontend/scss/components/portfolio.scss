@@ -104,6 +104,10 @@
     text-align: center;
     transition: all 0.3s;
     justify-content: center;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
     &::before {
       content: "";
       position: absolute;
