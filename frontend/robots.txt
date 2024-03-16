@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kadaconstruction/sitemap.xml
+Sitemap: https://kadaconstruction.ru/sitemap.xml
