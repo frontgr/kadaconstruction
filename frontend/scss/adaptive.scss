@@ -1884,6 +1884,9 @@
     width: 25px;
     height: 25px;
   }
+  .header__number{
+    display: flex;
+  }
 }
 @media screen and (max-width: 479px) {
   .form-sent__wrapper {

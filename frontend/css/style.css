@@ -125,13 +125,18 @@
   display: none;
 }
 .header__number {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
 .header__number-tel {
   font-weight: bold;
   font-size: 20px;
+  transition: color 0.3s;
+}
+.header__number-tel:hover {
+  cursor: pointer;
+  color: #ef7f2f;
 }
 .header__number-info {
   font-size: 12px;
@@ -3843,6 +3848,9 @@ a {
   .header__hamburger {
     width: 25px;
     height: 25px;
+  }
+  .header__number {
+    display: flex;
   }
 }
 @media screen and (max-width: 479px) {

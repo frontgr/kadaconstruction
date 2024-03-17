@@ -121,12 +121,17 @@
     display: none;
   }
   &__number{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     &-tel{
       font-weight: bold;
       font-size: 20px;
+      transition: color 0.3s;
+      &:hover{
+        cursor: pointer;
+        color: $orange;
+      }
     }
     &-info{
       font-size: 12px;
