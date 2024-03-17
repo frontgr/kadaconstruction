@@ -1876,6 +1876,14 @@
   .social-circles{
     display: flex;
   }
+  .header__image-logo{
+    width: 74px;
+    height: 25px;
+  }
+  .header__hamburger{
+    width: 25px;
+    height: 25px;
+  }
 }
 @media screen and (max-width: 479px) {
   .form-sent__wrapper {
@@ -2127,4 +2135,16 @@
   .footer__rights-inst {
     top: -380px;
   }
+}
+@media screen and (max-width: 400px) {
+  .header__number{
+    &-tel{
+      font-weight: bold;
+      font-size: 18px;
+    }
+    &-info{
+      font-size: 10px;
+    }
+  }
+  
 }

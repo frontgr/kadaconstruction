@@ -120,6 +120,18 @@
   &__hamburger {
     display: none;
   }
+  &__number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-tel{
+      font-weight: bold;
+      font-size: 20px;
+    }
+    &-info{
+      font-size: 12px;
+    }
+  }
 }
 .menu-popup {
   display: none;

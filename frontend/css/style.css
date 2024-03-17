@@ -124,6 +124,18 @@
 .header__hamburger {
   display: none;
 }
+.header__number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__number-tel {
+  font-weight: bold;
+  font-size: 20px;
+}
+.header__number-info {
+  font-size: 12px;
+}
 
 .menu-popup {
   display: none;
@@ -3817,6 +3829,14 @@ a {
   .social-circles {
     display: flex;
   }
+  .header__image-logo {
+    width: 74px;
+    height: 25px;
+  }
+  .header__hamburger {
+    width: 25px;
+    height: 25px;
+  }
 }
 @media screen and (max-width: 479px) {
   .form-sent__wrapper {
@@ -4062,5 +4082,14 @@ a {
 @media screen and (max-width: 465px) {
   .footer__rights-inst {
     top: -380px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__number-tel {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .header__number-info {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
