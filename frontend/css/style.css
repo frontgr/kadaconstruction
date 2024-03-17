@@ -2036,12 +2036,19 @@ a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 .social-circles__item-wa {
   background-color: #25D366;
 }
+.social-circles__item-wa:hover {
+  background-color: #34f13d;
+}
 .social-circles__item-tg {
   background-color: #28ADED;
+}
+.social-circles__item-tg:hover {
+  background-color: #23f8ff;
 }
 .social-circles__item-tg svg {
   transform: translateX(-8%);

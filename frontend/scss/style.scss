@@ -84,11 +84,18 @@ a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 0.3s;
     &-wa{
       background-color: #25D366;
+      &:hover{
+        background-color: #34f13d;
+      }
     }
     &-tg{
       background-color: #28ADED;
+      &:hover{
+        background-color: #23f8ff;
+      }
       & svg{
         transform: translateX(-8%);
       }
