@@ -1872,7 +1872,11 @@
     height: 416px;
   }
 }
-
+@media screen and (max-width: 559px){
+  .social-circles{
+    display: flex;
+  }
+}
 @media screen and (max-width: 479px) {
   .form-sent__wrapper {
     width: 280px;

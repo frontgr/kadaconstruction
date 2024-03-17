@@ -2006,6 +2006,35 @@ a {
   text-decoration: none;
 }
 
+.social-circles {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.social-circles__item {
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.social-circles__item-wa {
+  background-color: #25D366;
+}
+.social-circles__item-tg {
+  background-color: #28ADED;
+}
+.social-circles__item-tg svg {
+  transform: translateX(-8%);
+}
+
 @media screen and (max-width: 1673px) {
   .form-wrapper .form__right-notepad {
     right: -102px;
@@ -3782,6 +3811,11 @@ a {
   }
   .company-description__photo {
     height: 416px;
+  }
+}
+@media screen and (max-width: 559px) {
+  .social-circles {
+    display: flex;
   }
 }
 @media screen and (max-width: 479px) {
