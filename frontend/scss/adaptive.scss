@@ -1872,7 +1872,22 @@
     height: 416px;
   }
 }
-
+@media screen and (max-width: 559px){
+  .social-circles{
+    display: flex;
+  }
+  .header__image-logo{
+    width: 74px;
+    height: 25px;
+  }
+  .header__hamburger{
+    width: 25px;
+    height: 25px;
+  }
+  .header__number{
+    display: flex;
+  }
+}
 @media screen and (max-width: 479px) {
   .form-sent__wrapper {
     width: 280px;
@@ -2123,4 +2138,16 @@
   .footer__rights-inst {
     top: -380px;
   }
+}
+@media screen and (max-width: 400px) {
+  .header__number{
+    &-tel{
+      font-weight: bold;
+      font-size: 18px;
+    }
+    &-info{
+      font-size: 10px;
+    }
+  }
+  
 }
