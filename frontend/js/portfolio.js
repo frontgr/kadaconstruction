@@ -23,9 +23,9 @@ $(document).ready(function () {
   function changeImageAttributes() {
     var screenWidth = $(window).width();
     if (screenWidth < 768) {
-      $("#14th").attr("src", "../images/portfolio/portfolio__img-9.png");
-      $("#1st").attr("src", "../images/portfolio/portfolio__img-10.png");
-      $("#4th").attr("src", "../images/portfolio/portfolio__img-11.png");
+      $("#14th").attr("src", "../images/portfolio/portfolio__img-9.webp");
+      $("#1st").attr("src", "../images/portfolio/portfolio__img-10.webp");
+      $("#4th").attr("src", "../images/portfolio/portfolio__img-11.webp");
 
       $("#1st-t").text("Капитальный ремонт квартиры под ключ");
       $("#10th-t").text("Ремонт и отделка спальной комнаты");
@@ -33,16 +33,16 @@ $(document).ready(function () {
       $("#11th-t").text("Ремонт и обустройство гардеробной комнаты");
       $("#4th-t").text("Монтаж камина и обустройство каминной");
 
-      $("#9th").attr("src", "../images/portfolio/portfolio__img-14.png");
-      $("#10th").attr("src", "../images/portfolio/portfolio__img-1.png");
-      $("#11th").attr("src", "../images/portfolio/portfolio__img-4.png");
+      $("#9th").attr("src", "../images/portfolio/portfolio__img-14.webp");
+      $("#10th").attr("src", "../images/portfolio/portfolio__img-1.webp");
+      $("#11th").attr("src", "../images/portfolio/portfolio__img-4.webp");
     } else {
-      $("#14th").attr("src", "../images/portfolio/portfolio__img-14.png");
-      $("#1st").attr("src", "../images/portfolio/portfolio__img-1.png");
-      $("#4th").attr("src", "../images/portfolio/portfolio__img-4.png");
-      $("#9th").attr("src", "../images/portfolio/portfolio__img-9.png");
-      $("#10th").attr("src", "../images/portfolio/portfolio__img-10.png");
-      $("#11th").attr("src", "../images/portfolio/portfolio__img-11.png");
+      $("#14th").attr("src", "../images/portfolio/portfolio__img-14.webp");
+      $("#1st").attr("src", "../images/portfolio/portfolio__img-1.webp");
+      $("#4th").attr("src", "../images/portfolio/portfolio__img-4.webp");
+      $("#9th").attr("src", "../images/portfolio/portfolio__img-9.webp");
+      $("#10th").attr("src", "../images/portfolio/portfolio__img-10.webp");
+      $("#11th").attr("src", "../images/portfolio/portfolio__img-11.webp");
 
       $("#1st-t").text("Ремонт и отделка спальной комнаты");
       $("#10th-t").text("Капитальный ремонт квартиры под ключ");
