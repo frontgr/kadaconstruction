@@ -710,6 +710,12 @@
       width: 720px;
     }
   }
+  .social-circles{
+    display: flex;
+  }
+  .header__number{
+    display: flex;
+  }
   .menu-popup {
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
     & span,
@@ -1873,9 +1879,6 @@
   }
 }
 @media screen and (max-width: 559px){
-  .social-circles{
-    display: flex;
-  }
   .header__image-logo{
     width: 74px;
     height: 25px;
@@ -1883,9 +1886,6 @@
   .header__hamburger{
     width: 25px;
     height: 25px;
-  }
-  .header__number{
-    display: flex;
   }
 }
 @media screen and (max-width: 479px) {
