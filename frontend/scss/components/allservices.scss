@@ -10,6 +10,14 @@
     gap: 76px;
   }
   &__info {
+    &-desc {
+      color: $black;
+      font-size: 24px;
+      line-height: 132%;
+      text-align: left;
+      margin-bottom: 48px;
+      padding-right: 38px;
+    }
     &-title {
       font-size: 44px;
       font-weight: 700;
@@ -25,14 +33,7 @@
         letter-spacing: 0%;
       }
     }
-    &-desc {
-      color: $black;
-      font-size: 24px;
-      line-height: 132%;
-      text-align: left;
-      margin-bottom: 48px;
-      padding-right: 38px;
-    }
+
     &-also {
       color: $orange;
       font-size: 44px;
@@ -51,5 +52,16 @@
     align-items: center;
     justify-content: flex-start;
     gap: 8px;
+    &-desc {
+      color: $black;
+      font-size: 24px;
+      line-height: 132%;
+      text-align: left;
+      padding-right: 38px;
+    }
+    &-logo {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
