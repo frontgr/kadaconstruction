@@ -17,6 +17,9 @@
     &__description {
       font-weight: 400;
       font-size: 24px;
+      & span {
+        animation: changeColorOffer 2s infinite alternate;
+      }
     }
   }
   & .form {
@@ -332,5 +335,23 @@
         right: -234px;
       }
     }
+  }
+}
+
+@keyframes changeColorOffer {
+  0% {
+    color: #fdc195;
+  }
+  25% {
+    color: #ef7f2f;
+  }
+  50% {
+    color: #f56f10;
+  }
+  75% {
+    color: #ef7f2f;
+  }
+  100% {
+    color: #fdc195;
   }
 }
