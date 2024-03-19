@@ -1036,6 +1036,9 @@
   flex-direction: column;
   gap: 24px;
 }
+.info__img {
+  border-radius: 20px;
+}
 .info__desc {
   color: #212738;
   font-size: 24px;
@@ -2885,6 +2888,9 @@ a {
   .form-wrapper .form__left-parameters-count-radio-container input[type=radio] {
     top: -100px;
   }
+  .info__img {
+    border-radius: 12px;
+  }
   .form-wrapper .form {
     margin-top: 166px;
   }
@@ -3837,7 +3843,8 @@ a {
     font-size: 28px;
   }
   .form-wrapper .form__left-parameters-area-input,
-  .form-wrapper .form__right-inputs-name, .form-wrapper .form__right-inputs-phone,
+  .form-wrapper .form__right-inputs-name,
+  .form-wrapper .form__right-inputs-phone,
   .form-wrapper .form__right-inputs .comment__textarea {
     font-size: 20px;
   }
