@@ -2040,6 +2040,7 @@
   }
   .reviews__box {
     gap: 0;
+    pointer-events: none;
   }
   .reviews__containter {
     max-width: 100vw !important;

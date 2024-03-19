@@ -515,7 +515,6 @@
   font-size: 24px;
 }
 .form-wrapper .assess__description span {
-  transition: color 0.1s;
   animation: changeColorOffer 2s infinite alternate;
 }
 .form-wrapper .form {
@@ -4054,6 +4053,7 @@ a {
   }
   .reviews__box {
     gap: 0;
+    pointer-events: none;
   }
   .reviews__containter {
     max-width: 100vw !important;
