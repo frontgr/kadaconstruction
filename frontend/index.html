@@ -389,7 +389,11 @@
                         name="area"
                         placeholder="Площадь вашего помещения"
                         class="form__left-parameters-area-input"
-                        required
+                        required=""
+                        step=""
+                        oninput="this.value = this.value.replace(/[^0-9]/g, ''); if(parseInt(this.value) < 1) this.value = '1'; if(parseInt(this.value) > 800) this.value = '800';"
+                        minlength="1"
+                        maxlength="3"
                       />
                       <span>м&sup2;</span>
                     </div>
