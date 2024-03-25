@@ -324,7 +324,7 @@
   width: 225px;
 }
 .footer__logos-guarantee {
-  color: #6580B7;
+  color: #6580b7;
   font-size: 16px;
   letter-spacing: 0%;
   text-align: left;
@@ -346,7 +346,7 @@
   align-items: center;
 }
 .footer__socials #inst {
-  color: #6580B7;
+  color: #6580b7;
   font-size: 16px;
   line-height: 132%;
   letter-spacing: 0%;
@@ -398,7 +398,7 @@
   position: relative;
 }
 .footer__rights-text {
-  color: #6580B7;
+  color: #6580b7;
   font-size: 16px;
   font-weight: 500;
   line-height: 132%;
@@ -406,7 +406,7 @@
 }
 .footer__rights-inst {
   width: 252px;
-  color: #51699A;
+  color: #51699a;
   font-size: 12px;
   line-height: 132%;
   letter-spacing: 0%;
@@ -474,12 +474,11 @@
 .footer__social-img-ok {
   width: 28px;
   height: 28px;
-  background-image: url("../../images/social/OK.svg");
   transition: background-image 0.15s;
   transition-timing-function: ease-out;
 }
 .footer__social-img-ok:hover {
-  background-image: url("../../images/social/Button=ok, State=Hover.svg");
+  filter: brightness(1.3);
 }
 .footer__social-img-yt {
   width: 28px;
