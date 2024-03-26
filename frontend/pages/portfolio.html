@@ -614,6 +614,7 @@
                     placeholder="Ваше имя"
                     required
                     class="form__right-inputs-name"
+                    id="form__right-inputs-name"
                     oninput="validateInput(event)"
                     onpaste="validatePaste(event)"
                     oninput="validateInput(event)"
@@ -623,7 +624,14 @@
                   <script>
                     function validateInput(event) {
                       const regex = /^[A-Za-zА-Яа-яЁё\s]*$/;
-                      const input = event.target.value;
+                      let input = event.target.value;
+                      var inputElement = document.getElementById(
+                        "form__right-inputs-name",
+                      );
+                      if (inputElement) {
+                        var trimmedValue = inputElement.value.trimStart();
+                        inputElement.value = trimmedValue;
+                      }
                       if (!regex.test(input)) {
                         event.target.value = input.replace(
                           /[^A-Za-zА-Яа-яЁё\s]/g,
@@ -642,6 +650,7 @@
                       }
                     }
                   </script>
+
                   <input
                     type="text"
                     id="phone"
