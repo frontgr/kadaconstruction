@@ -1178,15 +1178,31 @@
                     placeholder="Ваше имя"
                     required
                     class="form__right-inputs-name"
-                    maxlength="100"
                     oninput="validateInput(event)"
+                    onpaste="validatePaste(event)"
+                    oninput="validateInput(event)"
+                    maxlength="100"
                   />
+
                   <script>
                     function validateInput(event) {
                       const regex = /^[A-Za-zА-Яа-яЁё\s]*$/;
                       const input = event.target.value;
                       if (!regex.test(input)) {
-                        event.target.value = input.slice(0, -1);
+                        event.target.value = input.replace(
+                          /[^A-Za-zА-Яа-яЁё\s]/g,
+                          "",
+                        );
+                      }
+                    }
+
+                    function validatePaste(event) {
+                      const pastedText = (
+                        event.clipboardData || window.clipboardData
+                      ).getData("text");
+                      const regex = /^[A-Za-zА-Яа-яЁё\s]*$/;
+                      if (!regex.test(pastedText)) {
+                        event.preventDefault();
                       }
                     }
                   </script>
