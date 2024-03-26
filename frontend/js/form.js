@@ -230,34 +230,39 @@ submitBtn.on("click", async (e) => {
       $(this).removeClass("form__not-filled");
     }
   });
+  if ($(".form__right-inputs-name").val().length < 3) {
+    $(".form__right-inputs-name").addClass("form__not-filled");
+  } else {
+    $(".form__right-inputs-name").removeClass("form__not-filled");
 
-  if (allFieldsFilled) {
-    let message = {
-      name: `${form_name.val()}`,
-      phone: `${form_phone.val()}`,
-      textarea: form_comment.val(),
-      counts: `${calculator.counts_room}`,
-      types: `${+calculator.type_repair - 1}`,
-      area: `${calculator.area_room}`,
-      whatsapp: `${form_writeTo.eq(0).prop("checked")}`,
-      telegram: `${form_writeTo.eq(1).prop("checked")}`,
-      viber: `${form_writeTo.eq(2).prop("checked")}`,
-    };
-    console.log(message);
-    $(".form-sent").css("display", "flex");
-    try {
-      let response = await fetch("https://kadaconstruction.ru/notification", {
-        method: "POST",
-        body: JSON.stringify(message),
-      });
-      if (response.ok) {
-        let data = await response.json();
-        console.log(data);
-      } else {
-        console.error("Ошибка HTTP: " + response.status);
+    if (allFieldsFilled) {
+      let message = {
+        name: `${form_name.val()}`,
+        phone: `${form_phone.val()}`,
+        textarea: form_comment.val(),
+        counts: `${calculator.counts_room}`,
+        types: `${+calculator.type_repair - 1}`,
+        area: `${calculator.area_room}`,
+        whatsapp: `${form_writeTo.eq(0).prop("checked")}`,
+        telegram: `${form_writeTo.eq(1).prop("checked")}`,
+        viber: `${form_writeTo.eq(2).prop("checked")}`,
+      };
+      console.log(message);
+      $(".form-sent").css("display", "flex");
+      try {
+        let response = await fetch("https://kadaconstruction.ru/notification", {
+          method: "POST",
+          body: JSON.stringify(message),
+        });
+        if (response.ok) {
+          let data = await response.json();
+          console.log(data);
+        } else {
+          console.error("Ошибка HTTP: " + response.status);
+        }
+      } catch (error) {
+        console.error("Ошибка:", error);
       }
-    } catch (error) {
-      console.error("Ошибка:", error);
     }
   }
 });
