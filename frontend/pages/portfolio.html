@@ -614,7 +614,17 @@
                     placeholder="Ваше имя"
                     required
                     class="form__right-inputs-name"
+                    oninput="validateInput(event)"
                   />
+                  <script>
+                    function validateInput(event) {
+                      const regex = /^[A-Za-zА-Яа-яЁё\s]*$/;
+                      const input = event.target.value;
+                      if (!regex.test(input)) {
+                        event.target.value = input.slice(0, -1);
+                      }
+                    }
+                  </script>
                   <input
                     type="text"
                     id="phone"
@@ -659,6 +669,7 @@
                     <textarea
                       name="textarea"
                       id="textarea"
+                      maxlength="1000"
                       class="comment__textarea"
                       placeholder="Расскажите о вашем идеальном ремонте…"
                     ></textarea>
