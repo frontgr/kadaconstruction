@@ -217,25 +217,34 @@ let submitBtn = $(".form__right-send__button");
 
 submitBtn.on("click", async (e) => {
   e.preventDefault();
-  if (
-    form_name[0].value !== "" &&
-    form_phone[0].value !== "" &&
-    form_comment[0].value !== "" &&
-    area_room_input[0].value !== ""
-  ) {
+
+  let allFieldsFilled = true;
+
+  $(
+    ".form__right-inputs-phone, .form__right-inputs-name, .form__left-parameters-area-input",
+  ).each(function () {
+    if ($(this).val() === "") {
+      $(this).addClass("form__not-filled");
+      allFieldsFilled = false;
+    } else {
+      $(this).removeClass("form__not-filled");
+    }
+  });
+
+  if (allFieldsFilled) {
     let message = {
-      name: `${form_name[0].value}`,
-      phone: `${form_phone[0].value}`,
-      textarea: form_comment[0].value,
+      name: `${form_name.val()}`,
+      phone: `${form_phone.val()}`,
+      textarea: form_comment.val(),
       counts: `${calculator.counts_room}`,
       types: `${+calculator.type_repair - 1}`,
       area: `${calculator.area_room}`,
-      whatsapp: `${form_writeTo[0].checked}`,
-      telegram: `${form_writeTo[1].checked}`,
-      viber: `${form_writeTo[2].checked}`,
+      whatsapp: `${form_writeTo.eq(0).prop("checked")}`,
+      telegram: `${form_writeTo.eq(1).prop("checked")}`,
+      viber: `${form_writeTo.eq(2).prop("checked")}`,
     };
     console.log(message);
-    $(".form-sent")[0].style.display = "flex";
+    $(".form-sent").css("display", "flex");
     try {
       let response = await fetch("https://kadaconstruction.ru/notification", {
         method: "POST",
@@ -254,21 +263,15 @@ submitBtn.on("click", async (e) => {
 });
 
 function cleanForm() {
-  form_name[0].value = "";
-  form_phone[0].value = "";
-  form_comment[0].value = "";
-  area_room_input[0].value = "";
-  form_writeTo[0].checked = false;
-  form_writeTo[1].checked = false;
-  form_writeTo[2].checked = false;
-  type_repair_inputs[0].checked = true;
-  type_repair_inputs[1].checked = false;
-  type_repair_inputs[2].checked = false;
-  counts_room_inputs[0].checked = true;
-  counts_room_inputs[1].checked = false;
-  counts_room_inputs[2].checked = false;
-  counts_room_inputs[3].checked = false;
-  counts_room_inputs[4].checked = false;
+  form_name.val("");
+  form_phone.val("");
+  form_comment.val("");
+  area_room_input.val("");
+  form_writeTo.prop("checked", false);
+  type_repair_inputs.eq(0).prop("checked", true);
+  type_repair_inputs.slice(1).prop("checked", false);
+  counts_room_inputs.eq(0).prop("checked", true);
+  counts_room_inputs.slice(1).prop("checked", false);
   calculator.counts_room = 1;
   calculator.type_repair = 1;
   calculator.area_room = 40;
@@ -276,13 +279,7 @@ function cleanForm() {
   getCosts();
 }
 
-$(".form-sent__close").on("click", () => {
-  $(".form-sent")[0].style.display = "none";
+$(".form-sent__close, .form-sent__btn").on("click", () => {
+  $(".form-sent").css("display", "none");
   cleanForm();
 });
-$(".form-sent__btn").on("click", () => {
-  $(".form-sent")[0].style.display = "none";
-  cleanForm();
-});
-
-/* form */

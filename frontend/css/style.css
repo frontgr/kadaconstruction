@@ -522,6 +522,9 @@
   display: flex;
   margin-top: 48px;
 }
+.form-wrapper .form__not-filled {
+  border-color: red !important;
+}
 .form-wrapper .form__comment {
   font-size: 28px;
   font-weight: 800;
